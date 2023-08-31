@@ -1,0 +1,115 @@
+<nav class="navbar sticky-top bg-dark" id="navbar-collapse" style="padding: 0;">
+    <div class="container nav-wrap">
+        <div class="leftnav">
+            <a href="/#main-id"> HOME </a>
+            <div class="dropdown">
+                <a href="/events" class="dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                    EVENTS
+                </a>
+              
+                <div class="dropdown-menu dd-menu-events" aria-labelledby="dropdownMenuLink">
+                  
+                    <a class="dropdown-item disrupt" href="/events/disrupt"> DISRUPT </a>
+                    
+                    <a class="dropdown-item internfair" href="https://docs.google.com/forms/d/1viFAgIEs7e8npfSJZlVLk4HKHEa6N5RyN6MxLcP7Z0g/edit?usp=sharing_eil_dm&ts=61a3bb22&urp=gmail_link" target="_blank"> INTERNFAIR </a> 
+                    <a class="dropdown-item workshops" href="/events/workshops"> WORKSHOPS </a> 
+                    <a class="dropdown-item encode" href="/events/encode"> ENCODE </a>
+                    <a class="dropdown-item sparkle" href="/events/sparkle"> SPARKLE </a>
+                    <a class="dropdown-item pmx" href="/events/pmx"> PMx </a>
+
+<!-- 
+
+                    <a class="dropdown-item ls" href="/events/lecture-series"> LECTURE SERIES </a> 
+                    <a class="dropdown-item pd" href="/events/panel-discussion"> PANEL DISCUSSION </a> 
+
+ -->
+
+                    <div class="dropdown-divider" style="opacity: .2;"></div>
+                    <a class="dropdown-item more-event" href="/#more-event"> MORE EVENTS </a> 
+                    
+                </div>
+            </div>
+            <a href="/#speakers"> SPEAKERS </a>
+            <a href="/#aboutus"> ABOUT US  </a>
+        </div>
+        <div class="midnav">
+            <!-- <a href="#"> logo </a> -->
+        </div>
+        <div class="rightnav">
+
+            <a href="/ourteam"> TEAM </a>
+            <a href="/sponsors"> SPONSORS </a>
+            <a href="/contactus"> CONTACT US </a>
+            <% if(!userinfo){%>
+            <a href="/login"> LOGIN </a>
+            <%}else{%>
+
+                <div class="dropdown">
+                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                      PROFILE
+                    </a>
+                  
+                    <div class="dropdown-menu dd-menu-profile" aria-labelledby="dropdownMenuLink">
+                      
+                        <a class="dropdown-item" href="/dashboard"> DASHBOARD </a>
+                        <a class="dropdown-item" href="/auth/logout"> LOGOUT </a> 
+                    </div>
+                </div>
+                  
+             <%}%>   
+        </div>
+
+    </div>
+</nav>
+
+<style>
+    .menu-items li a{
+        text-transform: uppercase;
+    }
+    @media screen and (max-width:768px) {
+        .menu-items li a{
+            font-size: 28px !important;
+        }
+    }
+</style>
+<nav class="mobile-nav mobile-only">
+    <input type="checkbox" name="" id="hamberger-checkbox">
+    <div class="hamberger-blurring">
+
+    </div>
+    <div class="hamberger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+    </div>
+    <ul class="menu-items">
+        <li ><a href="/#main-id" style="padding-top: 20px;">Home</a></li>
+        <li><a href="/#speakers">Speakers</a></li>
+        <li><a href="/#events-main">Events</a></li>
+        <li><a href="/#aboutus">About-us</a></li>
+        <li><a href="/ourteam">Team</a></li>
+        <li><a href="/sponsors">Sponsors</a></li>
+        <li><a href="/contactus">Contact us</a></li>
+        <li>
+            <% if(!userinfo){%>
+                <a href="/login"> LOGIN </a>
+                <%}else{%>
+    
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                          PROFILE
+                        </a>
+                      
+                        <div class="dropdown-menu dd-menu-profile" aria-labelledby="dropdownMenuLink">
+                          
+                            <a class="dropdown-item" href="/dashboard"> DASHBOARD </a>
+                            <a class="dropdown-item" href="/auth/logout"> LOGOUT </a> 
+                        </div>
+                    </div>
+                      
+                 <%}%> 
+        </li>
+        
+    </ul>
+</nav>
+

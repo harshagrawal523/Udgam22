@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDGAM | Speakers</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/hamberger.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="icon" href="../static files/UDGAM logo (title).png" type="image/icon type">
+
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+    
+<style>
+
+    #speaker-bg{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width:10%;
+      display:inline-block;
+      padding-top:10%;
+      position:absolute;
+      overflow:hidden !important;
+      border-radius:10%;
+      -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);
+    }
+    #speaker-bg img{
+        position:absolute;
+        min-width:calc(100% + 30px);
+        height:calc(100% + 30px);
+        left:-15px;
+        right:-15px;
+        top:-15px;
+        bottom:-15px;
+        transition: .5s ease-in-out;
+        -webkit-transition: .5s ease-in-out;
+        transform: translateZ(0.1px)
+      }
+      
+    #speaker-company{
+        font-size: 2vh;transform: translate(-50%,-50%);
+        width:10%;
+        display:inline-block;
+        padding-top:10%;
+        position:absolute;
+        overflow:hidden !important;
+        border-radius:10%;
+        -webkit-filter: blur(0px); -moz-filter: blur(0px); -o-filter: blur(0px); -ms-filter: blur(0px); filter: blur(0px);/*prevents image from overflowing*/
+    
+    }
+
+    
+</style>
+ 
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div class="main">
+
+          <!-- navbar -->
+    <%- include("./partials/nav.ejs") %>
+   
+    
+        <section class="section-padding" style="margin-top: 10px;">
+            <div class="container">
+                <div class="col-lg-12 col-xs-12">
+                    <div class="row justify-content-left">
+                        <div>
+                            <h2>
+                                <strong class="section-title" style="color:#fc0144; font-size: 6vh;">SPEAKERS</strong>
+                            </h2>
+                            <h6>
+                                All Great People at one place.Included with UDGAM Pass.
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div  class="container">
+                <div class="speaker-info">
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter1">
+                        <img class="speaker__img" src="./static files/jimmy wales.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Co-Founder
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter1">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter1" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/jimmy wales.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/jimmy-wales-919a8b/ " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/jimmy_wales?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Jimmy Wales</div>
+                                            <div class="modalspeakerpostion"> Wikipedia <svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Co-Founder </div>
+                                            <p class="modalspeakerdetails" style="color: black;">He is a co-founder of the online non-profit encyclopedia Wikipedia.He currently serves as the Chair Emeritus and Board Member of the Wikimedia Foundation and Chair of Wikia, Inc.He earned bachelor's and master's degrees in finance from Auburn University and the University of Alabama respectively. He worked as Research Director at Chicago Options Associates, a futures and options trading firm then located in Chicago. Before coming up with the idea of  wikipedia he had the concept of Nupedia but wikepedia became an instant success. In 2004, Jimmy founded Wikia. He was appointed a fellow of Harvard Law School’s Berkman Center for Internet and Society in mid-2005, and in October of 2005 joined the Board of Directors of Socialtext, a provider of wiki technology to businesses. By 2006 Wikipedia was available in a number of languages and was one of the Internet’s most popular sites.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Jimmy Wales</div>
+                            <div class="speaker-company">Co-Founder </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter2"
+                        data-target="#exampleModalCenter2">
+                        <img class="speaker__img" src="./static files/kevin-harrington-speaker-large.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Original Shark
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter2">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/kevin-harrington-speaker-large.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/thekevinharrington/ " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.facebook.com/officialkevinharrington " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\facebook.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/HarringtonKevin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Kevin Harrington</div>
+                                            <div class="modalspeakerpostion">Shark Tank <svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Co-Founder </div>
+                                            <p class="modalspeakerdetails" style="color: black;">He has emergerd out to be one of the most successful entrepreneur over the last 40 yrs. He has been an original Shark on ABC’s Emmy winning TV show, “Shark Tank” and inventor of the Infomercial.He is also a co-founder of the Entrepreneurs’ Organization, the world’s only peer-to-peer network exclusively for entrepreneurs and co- founder of the Electronic Retailers Association (ERA). His businesses have resulted in extensive experience all over the world in a variety of markets, including the opening of distribution outlets in over 100 countries worldwide. Currently, he is  working with companies to increase distribution; analyze electronic retailing opportunities and effectively market on digital, social media, TV, radio, or print.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Kevin Harrington</div>
+                            <div class="speaker-company">Shark Tank </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter3">
+                        <img class="speaker__img" src="./static files/michael seibel.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Managing Director
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter3">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/michael seibel.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/mwseibel/" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/mwseibel" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Michael Seibel</div>
+                                            <div class="modalspeakerpostion">Y Combinator <svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Managing Director </div>
+                                            <p class="modalspeakerdetails" style="color: black;">Michael Seibel (born October 7, 1982) is a Managing Director at Y Combinator and co-founder of two startups – Justin.tv/Twitch and Socialcam. Michael Seibel is a Group Partner and Managing Director, Early Stage at YC in 2013, advising hundreds of startups, and has been active in promoting diversity efforts among startup founders. Socialcam sold to Autodesk in 2012 and under the leadership of Emmett Shear, Justin.tv became Twitch.tv and sold to Amazon in 2014. Before getting into startups, he spent a year as the finance director for a US Senate campaign and in 2005, Michael graduated from Yale University with a BA in political science.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Michael Seibel</div>
+                            <div class="speaker-company">Y Combinator </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter4">
+                        <img class="speaker__img" src="./static files/Rohit-Kapoor.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            CEO
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter4">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/Rohit-Kapoor.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/rohit-kapoor-99a30436/ " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/rohitisb?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.instagram.com/rohitkapoor.in/?hl=enn " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="instagram button" src="static files\instagram.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Rohit Kapoor</div>
+                                            <div class="modalspeakerpostion">OYO (INSEA)<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> CEO </div>
+                                            <p class="modalspeakerdetails" style="color: black;">He is the CEO, India & South-East Asia (INSEA), at OYO. He is a seasoned professional with over 20 years of experience. He joined OYO in December 2018 as CEO, New Real Estate Businesses, and in the span of a year, led the formation and growth of OYO LIFE and OYO Workspaces in India. He has worked in various leadership positions across sales and finance in several companies such as Max India Limited and Mckinsey & Company. Prior to joining OYO, he was the Executive Board Member at Max Healthcare for close to 5 years. He has also been Senior Director-Strategy & Business Performance at Max. He is passionate about a quality education, and for access to opportunities being given to all. For this reason, he has been appointed as visiting faculty at SP Jain Institute of Management and Research, Harappa Education, IMT Ghaziabad, and Vedica Scholars- a programme for women to broaden their horizons. He also dons the hat of an investor across the domains of prop tech, health tech and fintech to name a few as he believes that entrepreneurial ambitions must be nourished, and is actively entrenched in the startup ecosystem of India.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Rohit Kapoor</div>
+                            <div class="speaker-company">OYO (INSEA) </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter5" data-toggle="modal">
+                        <img class="speaker__img" src="./static files/Mostly sane.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Youtuber
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter5">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter5" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/Mostly sane.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.facebook.com/MostlySaneOfficial/" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\facebook.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/iammostlysane" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    
+                                                    <a href="https://www.instagram.com/mostlysane/?hl=en" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="instagram button" src="static files\instagram.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Prajakta Koli</div>
+                                            <div class="modalspeakerpostion">Mostlysane <svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg>Youtuber</div>
+                                            <p class="modalspeakerdetails" style="color: black;">Prajakta Koli, known by her online alias Mostlysane, is an Indian YouTuber and actress who makes comedy videos. Her videos are focused mostly on relatable and observational comedy related to daily life situations. Koli began her career in media as an intern at Fever 104 FM radio station in Mumbai. After interning for a year, she was given her first show, Call Centre, which ultimately flopped and she quit her job. While working as an intern, Koli met future One Digital Entertainment vice-president Sudeep Lahiri, who encouraged her to launch a comedy YouTube channel. Koli launched her channel in February 2015.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Prajakta Koli</div>
+                            <div class="speaker-company">Mostlysane </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter6" data-toggle="modal">
+                        <img class="speaker__img" src="./static files/ankit nagori.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Co-Founder
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter6">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter6" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/ankit nagori.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/ankitnagori/?originalSubdomain=in " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Ankit Nagori</div>
+                                            <div class="modalspeakerpostion">Cure.fit <svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Co-Founder </div>
+                                            <p class="modalspeakerdetails" style="color: black;">He is the co-founder of Cure.fit and one of India’s best-known startup executives. He has gained his bachelor's degree from Indian Institute of Technology, Guwahati.Soon after graduation in 2007, he founded a social media startup, Youthpad, which he ran for three years. He then joined Flipkart as a manager, where he rose quickly across the ranks to spearhead the company’s operations as its Chief Business Officer. In 2016, after a six-year tenure at Flipkart, he left to establish cure.fit. In October last year, Cure.fit said it will spin out its cloud kitchen brand Eat.fit into a separate entity to enable the cloud kitchen business to raise equity capital independent of the holding company for business expansion. </p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Ankit Nagori</div>
+                            <div class="speaker-company">Cure.fit </div>
+                        </div>
+                    </div>
+
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter7">
+                        <img class="speaker__img" src="./static files/Ankur-Warikoo.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Founder
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter7">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter7" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/Ankur-Warikoo.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/warikoo/ " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/warikoo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.instagram.com/ankurwarikoo/?hl=en " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="instagram button" src="static files\instagram.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Ankur Warikoo</div>
+                                            <div class="modalspeakerpostion">Nearbuy <svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Founder</div>
+                                            <p class="modalspeakerdetails" style="color: black;">He is an entrepreneur, a teacher, a content creator and a mentor, based out of India. He founded nearbuy.com in 2015 and was the CEO until 2019. Prior to that, he was the founding CEO of Groupon's India business from 2011 to 2015. He is a digital educator and conducts courses on entrepreneurship, career management and personal growth. Over 80,000+ students have attended his courses so far. He loves spending time with first-time entrepreneurs hoping he can help them not make the same mistakes he made when we started up. Apart from this, he is a regular public speaker and social media influencer, with 3.8Mn+ followers across Linkedin, Facebook, Instagram, Twitter and YouTube.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Ankur Warikoo</div>
+                            <div class="speaker-company">Nearbuy </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter8">
+                        <img class="speaker__img" src="./static files/Bindeshwar Pathak.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Founder
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter8">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter8" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/Bindeshwar Pathak.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.facebook.com/drbindeshwarpathak" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\facebook.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/bindeshwarpatha?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Dr. Bindeshwar Pathak</div>
+                                            <div class="modalspeakerpostion">Sulabh International <svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Founder </div>
+                                            <p class="modalspeakerdetails" style="color: black;">Bindeshwar Pathak is an Indian sociologist and social entrepreneur.[2] He is the founder of Sulabh International, an India-based social service organisation which works to promote human rights, environmental sanitation, non-conventional sources of energy, waste management and social reforms through education. He is the Brand Ambassador for Swachh Rail Mission of Indian Railways.[3] His work is considered pioneering in social reform, especially in the field of sanitation and hygiene. He received various national and international awards for his work with this organisation. He was presented with the Lal Bahadur Shastri National Award for Excellence in Public Administration, Academics and Management for the year 2017.[4] He was conferred with Padma Bhushan, India's third-highest civilian award in 1991.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Bindeshwar Pathak</div>
+                            <div class="speaker-company">Sulabh International </div>
+                        </div>
+                    </div>
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter9">
+                        <img class="speaker__img" src="./static files/Prakash Sangam.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            CEO
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter9">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter9" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/Prakash Sangam.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/prakashsangam/?originalSubdomain=in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/prakashsangam" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Mr. Prakash Sangam</div>
+                                            <div class="modalspeakerpostion">Redbus<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> CEO </div>
+                                            <p class="modalspeakerdetails" style="color: black;">Prakash Sangam has been Chief Executive Officer of redBus since June 2014. Prior to redBus. He served as an Executive Vice President of Info Edge India (Naukri group), heading two group businesses namely Shiksha.com and Jeevansathi.com. He’s also worked as General Manager of Marketing and Innovation at Airtel and has also had multiple roles across Marketing, Brand Management and Sales at Hindustan Unilever. Prakash has completed his MBA from IIM Calcutta and also holds an Honours degree in Production Engineering from Mumbai University.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Prakash Sangam</div>
+                            <div class="speaker-company">Redbus</div>
+                        </div>
+                    </div>
+                  
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter10">
+                        <img class="speaker__img" src="./static files/ranveer.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Founder
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter10">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter10" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/ranveer.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/beerbiceps/?originalSubdomain=in " target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.facebook.com/Ranveer.A" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\facebook.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.instagram.com/ranveerallahbadia/?hl=en" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="instagram button" src="static files\instagram.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Ranveer Allahbadia</div>
+                                            <div class="modalspeakerpostion">BeerBiceps<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Founder </div>
+                                            <p class="modalspeakerdetails" style="color: black;">Ranveer Allahbadia is a social media entrepreneur, YouTuber, motivational speaker, leadership coach, and soon-to-be author. Along with that, a podcast host who runs India's TOP Podcast - ""The Ranveer Show"".He founded BeerBiceps Pvt Ltd, a company that creates self-improvement content in various formats, with now running 6 YouTube Channels. In 2018, BeerBiceps diversified into creating regional content online. Today the Hindi YouTube Channel, 'Ranveer Allahbadia' stands at 2 million+ subscribers while the English YouTube channel stands at 3 million+ subscribers.  He also created a Mock Entertainment. It is an 80+ member organization that is a one-stop solution for digital marketing and talent management. In July 2019, the BeerBiceps team launched it's podcast The Ranveer Show. TRS went on to feature legends like Arnold Schwarzenegger, Gary Vanynerchuk, Priyanka Chopra, Kunal Shah, Glenn McGrath, Sadhguru & more. In March 2020, #TheRanveerShow became India's top ranked podcast on Spotify and continues to retain the position.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Ranveer Allahbadia</div>
+                            <div class="speaker-company">BeerBiceps</div>
+                        </div>
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter11">
+                        <img class="speaker__img" src="./static files/Vaibhav sisinty.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Founder
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter11">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter11" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/Vaibhav sisinty.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/vaibhavsisinty/?originalSubdomain=in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/VaibhavSisinty?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.instagram.com/vaibhavsisinty/?hl=en" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="instagram button" src="static files\instagram.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Vaibhav sisinty</div>
+                                            <div class="modalspeakerpostion">Growth School<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Founder </div>
+                                            <p class="modalspeakerdetails" style="color: black;">Vaibhav sisinty transform startups into cash-printing businesses, growth consult for brands and help them use the internet to skyrocket profits and their overall bottom lines. In 2012 (at age 19), I switched from running Discovery Android to founding an award-winning digital media company, CrazyHeads. In 3 years, CrazyHeads helped over 100+ clients worldwide blow up their businesses using the internet. In 2012 (at age 19), I switched from running Discovery Android to founding an award-winning digital media company, CrazyHeads. In 3 years, CrazyHeads helped over 100+ clients worldwide blow up their businesses using the internet.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Vaibhav sisinty</div>
+                            <div class="speaker-company">Growth School</div>
+                        </div>
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter12">
+                        <img class="speaker__img" src="./static files/vivek prakash.png" alt="speaker img">
+                        <div class="speaker-side-name">
+                            Co-Founder
+                        </div>
+                        <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter12">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="exampleModalCenter12" tabindex="-1" role="dialog"
+                            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class = "col-md-4" style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img" src="./static files/vivek prakash.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="https://www.linkedin.com/in/prakashvivek/?originalSubdomain=in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.facebook.com/vivekprakash17" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\facebook.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://twitter.com/vivekprakash?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="twitter button" src="static files\twitter.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class = "col-md-8" style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Vivek prakash</div>
+                                            <div class="modalspeakerpostion">Codinjal<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Co-Founder </div>
+                                            <p class="modalspeakerdetails" style="color: black;">Vivek Prakash completed his B.Tech. and M.Tech. in Computer Science from IIT Roorkee in 2013. After that, he co-founded HackerEarth - one of the largest platforms for software engineers all over the world to solve coding problems and participate in hackathons. He comes with deep technical experience in the field of coding education. Now, he is the Co-Founder & CEO of Codingal - the company on a mission to enable access to coding education for school students in the K-12 segment.</p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speaker-content">
+                            <div class="speaker-name">Vivek prakash</div>
+                            <div class="speaker-company">Codinjal</div>
+                        </div>
+                    </div>
+                
+                </div>  
+            </div>
+        </section>
+
+    
+
+        <div style="margin-top: 250px;"></div>
+    <!-- footer -->
+    <%- include("./partials/footer.ejs") %>
+        
+    <!-- message on inactive tab -->
+    <%- include("./partials/inactive-tab-message.ejs") %>
+
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+        });
+    </script>
+    <script src="../js/hamberger.js"></script>
+
+    <!-- three.js -->
+    <script src="../js/three.js"></script>
+
+    <script type="module" src="../js/top_sphere.js"></script>
+
+</body>
+</html>

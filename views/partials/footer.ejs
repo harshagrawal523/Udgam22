@@ -1,0 +1,232 @@
+<style>
+    .footer-input-mail{
+
+        padding: 5px 5px !important;
+        margin: 8px 0 !important;
+
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .mail-subscribe{
+        height: 40px;
+    }
+    @media screen and (max-width: 768px) {
+        .footer-input-mail{
+            width: 100%;
+            padding: 2.5px 5px !important;
+            height: 30px;
+        }
+        .mail-subscribe{
+            width: 40%;
+            height: 30px !important;
+        }
+    .beyond-footer-links{
+        font-size: 8px !important;
+    }
+        
+    }
+
+    .beyond-footer{
+        background-color: #3b3b3b;
+        padding: 0 10vw;
+
+    }
+    .beyond-footer-links{
+        font-size: 12px;
+        font-weight: 300;
+
+        color: #fff;
+    }
+
+    /* ----------- */
+   
+   
+   
+    input {
+
+
+        transition: all .25s ease;
+
+    }
+    input.valid ~ .icons .check{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+    input.invalid ~ .icons .x{
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1);
+    }
+
+    .footer-email-check-icons {
+        position: relative;
+        left: -30px;
+        
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        pointer-events: none;
+        width: 20px;
+        height: 20px;
+        transition: all .25s ease;
+    }
+    .email-check-icons {
+        position: relative;
+        left: 260px;
+        top: -38px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        pointer-events: none;
+        width: 20px;
+        height: 20px;
+        transition: all .25s ease;
+    }
+    .check-icon {
+        position: absolute;
+        transition: all .25s ease;
+        font-size: 1.3rem;
+        opacity: 0;
+        visibility: hidden;
+        transform: scale(.5);
+    }
+    .check {
+        color: #3aba6f;
+        text-shadow: 0px 5px 10px rgba(58, 186, 111, .3);
+    }
+    .x {
+        color: rgb(240, 90, 92);
+        text-shadow: 0px 5px 10px rgba(240, 90, 92, .3);
+    }
+
+
+    @media screen and (max-width:768px) {
+        .footer-email-check-icons {
+            left: 60px !important;
+            top: -37px;
+
+        }
+    .email-check-icons {
+        left: 130px !important;
+            top: -28px !important;
+    }
+    }
+    
+    /* ----------- */
+</style>
+
+<section>
+
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+</section>
+ 
+  
+
+<section class="footer-sec">
+    <hr color="white">
+
+    <div class="contactus container row justify-content-between">
+        <div class="contactus-left col-md-6 col-6 align-self-start">
+            <span>UDGAM 2022 </span><br>
+            <span>COSMOS OF ENDEAVORS </span><br>
+            <span>FAQ • Contact us</span><br>
+            <span>udgam@iitg.ac.in </span><br>
+        </div>
+
+        <div class="contactus-right col-md-6 col-6 align-self-start">
+            <span>Don’t miss the magic</span>
+            <span>Sign up to receive event updates and notifications.</span>
+            <form class="form-row" style="display: flex; justify-content: end;" method = "POST" action="/subscribe">
+                
+                <input class="col-sm-11 col-md-8 align-self-center footer-input-mail" type="email" id="email" name="email" required oninput="handleInput(event)">
+                <div class="icons footer-email-check-icons align-self-center footer-mail-icon">
+                    <i class='check-icon bx bxs-check-circle check' ></i>
+                    <i class='check-icon bx bxs-x-circle x' ></i>
+                  </div>
+                <button class="col-sm-1 col-md-2 align-self-center text-center mail-subscribe" type="submit" style="background: rgb(255, 255, 255);">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <hr style="background-color: white; margin: 0;">
+    <footer>
+        <div class="container footer-wrapper row justify-content-between">
+            <div class="footer-text col-md-6">
+                Copyright &copy; 2022 UDGAM Creatives, All rights reserved.
+            </div>
+            <div class="footer-icons col-md-6">
+                <a href="https://www.facebook.com/ecell.iitg/" target="_blank">
+                    <img class="facebook button" src="../static files\facebook.svg">
+                </a>
+                <a href="https://twitter.com/ecelliitg" target="_blank">
+                    <img class="twitter button" src="../static files\twitter.svg">
+                </a>
+                <a href="https://www.linkedin.com/company/ecell-iitg/" target="_blank">
+                    <img class="linkedin button" src="../static files\linkedin.svg">
+                </a>
+                <a href="https://www.instagram.com/ecell_iitg/" target="_blank">
+                    <img class="discord button" src="../static files\instagram.svg">
+                </a>
+                <a href="https://www.youtube.com/user/iitgedc" target="_blank">
+                    <img class="discord button" src="../static files\youtube.svg">
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+
+
+    <div class="beyond-footer">
+
+        <div class="row justify-content-between">
+            <div class="col text-center">
+                <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1v7L-nSsN0WyLDo0HqlXcX5KIHVb54F0MD0rhH89xnfs/mobilebasic" target="_blank">
+                    Terms and conditions
+
+                </a>
+            </div>
+            <div class="col text-center">
+                <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1C0eJ5OcYg3JOod5DZ5nmvLSWkivE_fDUNY6jkM6fcY0/mobilebasic" target="_blank">
+                    Privacy policy
+
+                </a>
+            </div>
+            <div class="col text-center">
+                <a class="beyond-footer-links" href="https://docs.google.com/document/u/0/d/1j_zpxVRzhC-f8CACTvr3MZDz8L6TCztZX2EADxNYbnk/mobilebasic" target="_blank">
+                    Refund policy
+
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>
+      $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+        });
+</script>
+
+
+<script>
+    function handleInput(evt) {
+        const value = evt.target.value
+        const emailRegex = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+        
+        if (emailRegex.test(value.trim())) {
+            evt.target.classList.add('valid')
+            evt.target.classList.remove('invalid')
+        } else {
+            evt.target.classList.add('invalid')
+            evt.target.classList.remove('valid')
+        }
+
+        if (!value) {
+            evt.target.classList.remove('invalid')
+        }
+    }
+</script>

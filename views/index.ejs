@@ -1,0 +1,2000 @@
+`
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDGAM HOMEPAGE</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="icon" href="./static files/UDGAM logo (title).png" type="image/icon type">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="icon" href="../static files/UDGAM logo (title).png" type="image/icon type">
+    <link rel="stylesheet" href="../carousel/style2.css">
+    <link rel="icon" href="../static files/UDGAM logo (title).png" type="image/icon type">
+
+
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/hamberger.css">
+</head>
+
+<body>
+    <div id="main-id"></div>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <canvas id="bg"></canvas>
+    <canvas id="sphere"></canvas>
+    <!-- <canvas id="sphere2"></canvas> -->
+    <div id="bg_image"></div>
+
+    <main class="main">
+        <!-- navbar -->
+        <%- include("./partials/nav.ejs") %>
+
+
+            <!-- Title Section -->
+            <section class="section-padding title-section">
+                <div class="container" id="title">
+                    <div class="row justify-content-around">
+
+                        <div class="col col-lg-6 align-self-start"
+                            style="text-align: left;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);">
+                            UDGAM
+                        </div>
+                        <div class="col-lg-5 hidden-xs"></div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <div class="col-lg-6 hidden-xs"></div>
+                        <div class="col col-lg-6 align-self-start"
+                            style="padding-left: 50px;text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.6);" id="text_2022">
+                            2022
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-padding">
+                <div class="container" id="register">
+                    <div class="row">
+                        <div class="col col-lg-3 d-none d-lg-inline">
+
+                        </div>
+                        <div class="col col-lg-6 text-center" style="margin: 7vh 0; font-size: larger; ">
+                            <%if(!userinfo){%>
+                                <button style=" padding:1vh 2vw; font-weight: bold;">
+                                    <a href="/register" style="color: black;text-decoration: none;">
+
+                                        REGISTER
+                                    </a>
+                                </button>
+                                <%}else{ %>
+                                    <h1> Welcome, <%= userinfo.displayName%>
+                                    </h1>
+                                    <%}%>
+                        </div>
+                        <div class="col col-lg-4 d-none d-lg-inline">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="events-main">
+
+                <!-- Events Section -->
+                <section class="section-padding events-section">
+
+                    <div class="container" id="events">
+
+
+                        <div class="row text-left" style="padding-left: 11px !important;">
+
+                            <div>
+                                <h2>
+                                    <strong class="section-title" style="color:#00b0e0; ">
+                                        EVENTS
+                                    </strong>
+                                </h2>
+                                <h6>
+                                    A series of well-crafted events to equip you with the tools you need in your
+                                    entrepreneurial journey.
+                                </h6>
+                            </div>
+                        </div>
+                        <br />
+                        <div style="position:relative; text-align:center; cursor:pointer;" id="events-head-desktop">
+
+
+                            <!-- EVENT INTERNFAIR -->
+                            <div style="position:absolute; top: 3px; left:200px; right:200px;"
+                                id="internfair-event-div">
+                                <svg width="121" height="175" viewBox="0 0 121 175" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.22949 148.79L52.7077 12L114.335 169.756L5.22949 148.79Z"
+                                        stroke-width="7.67724" />
+                                </svg>
+                            </div>
+                            <div style="position:absolute; top: 5px; left:375px; right:200px;"
+                                id="internfair-event-line">
+                                <svg width="138" height="83" viewBox="0 0 138 83" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.886719 81.7478L137 1.00001" stroke-width="0.738725" />
+                                </svg>
+                            </div>
+                            <a href="https://docs.google.com/forms/d/1viFAgIEs7e8npfSJZlVLk4HKHEa6N5RyN6MxLcP7Z0g/edit?usp=sharing_eil_dm&ts=61a3bb22&urp=gmail_link" style="text-decoration: none; color: white;"><div class="events-head-list-title events-position-right" id="internfair-event-text"
+                                style="position:absolute; top: -18px; left:63%; text-align:left; z-index:2;">
+                                INTERN FAIR
+                                <div class="events-head-body" style="text-align: left; display:none;"
+                                    id="internfair-event-body">Internship oppurtunities to IIT Guwahati students in
+                                    startups.
+                                    <br>
+                                    <% if(data && data.internfair==1){ %>
+                                        <% if(userinfo && userinfo.internfair==1){ %>
+                                            <a href="#" class="title-reg">
+                                                REGISTERED
+                                            </a>
+
+                                            <% }else{ %>
+                                                <a href="https://docs.google.com/forms/d/1viFAgIEs7e8npfSJZlVLk4HKHEa6N5RyN6MxLcP7Z0g/edit?usp=sharing_eil_dm&ts=61a3bb22&urp=gmail_link"
+                                                    class="title-reg" target="_blank">
+                                                    REGISTER YOUR STARTUP
+                                                </a>
+
+                                                <% } %>
+                                                    <% }else{ %>
+                                                        <a href="#" class="title-reg">
+                                                            RELEASING SOON
+                                                        </a>
+                                                        <% } %>
+                                                            &#8226;
+                                                            <a href="/events/internfair" target="_blank" class="title-knw">
+                                                                Know More
+                                                            </a>
+                                                            <br>
+                                </div>
+                                <br>
+                            </div>
+</a>
+
+                            <!-- EVENT LECTURE SERIES -->
+                            <div style="position:absolute; top:141px; left:13px; right:200px; z-index:-2;"
+                                id="lectureseries-event-div">
+                                <svg width="109" height="152" viewBox="0 0 109 152" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M72.3275 50.563L77.7502 37.5898C86.3324 73.8527 94.4345 108.088 103.043 144.478L5.84473 100.816C22.1503 71.1995 38.0739 42.2742 55.2663 11.0159C59.1055 25.5601 62.3046 37.6948 65.5713 50.0945L68.259 60.2971L72.3275 50.563Z"
+                                        stroke-width="7.67724" />
+                                </svg>
+                            </div>
+                            <div style="position:absolute; top:141px; left:-148px; right:200px;"
+                                id="lectureseries-event-line">
+                                <svg width="96" height="67" viewBox="0 0 96 67" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L95.5196 66.4578" stroke-width="0.738725" />
+                                </svg>
+                            </div>
+                            <a href="" style="text-decoration: none; color: white;">
+                                <div class="events-head-list-title"
+                                style="position:absolute; top:115px; left: -43%; right:0px; margin-left: 52%;margin-right:68%; text-align: right;"
+                                id="lectureseries-event-text">
+                                LECTURE SERIES
+                                <div class="events-head-body" style="display:none; text-align:right;"
+                                    id="lectureseries-event-body">
+                                    Inspiring sessions with accompolished personalities in the startup world.
+                                    <br>
+                                    <% if(data && data.ls==1){ %>
+                                        <% if(userinfo && userinfo.ls==1){ %>
+                                            <a href="#" class="title-reg">
+                                                REGISTERED
+                                            </a>
+
+                                            <% }else{ %>
+                                                <a href="/lecture-series/register" class="title-reg">
+                                                    REGISTER NOW
+                                                </a>
+
+                                                <% } %>
+                                                    <% }else{ %>
+                                                        <span href="#" class="title-reg">
+                                                            RELEASING SOON
+                                                        </span>
+                                                        <% } %>
+
+                                                            <!-- <a href="/events/lecture-series" class="title-knw">
+                                        Know More
+                                    </a> -->
+                                                            <br>
+                                </div>
+                                <br>
+                            </div>
+
+                            </a>
+                            
+
+                            <!-- EVENT PMX -->
+
+                            <div style="position:absolute; top:165px; left:200px; right:200px; z-index:-3;"
+                                id="pmx-event-div">
+                                <svg width="119" height="132" viewBox="0 0 119 132" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M5.77441 5.75293L111.592 25.6647L33.2241 122.941C29.6001 107.472 26.0608 92.3598 22.5404 77.3252C16.9926 53.6352 11.4905 30.1397 5.77441 5.75293Z"
+                                        stroke-width="7.67724" />
+                                </svg>
+                            </div>
+                            <div style="position:absolute; top:190px; left:53%; " id="pmx-event-line">
+                                <svg width="106" height="2" viewBox="0 0 106 2" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1H106" stroke-width="0.738725" />
+                                </svg>
+                            </div>
+                            <a href="/events/pmx" style="text-decoration: none; color: white;">
+                                <div class="events-head-list-title events-position-right"
+                                    style="position:absolute; top:165px; left: 62%; text-align:left; z-index:2;"
+                                    id="pmx-event-text">
+                                    PMX
+                                    <div class="events-head-body" style="text-align: left; display:none;"
+                                        id="pmx-event-body">India's Largest* Product Management Case Study Competition
+                                        <br>
+                                        <% if(data && data.pmx==1){ %>
+                                            <% if(userinfo && userinfo.pmx==1){ %>
+                                                <a href="#" class="title-reg">
+                                                    REGISTERED
+                                                </a>
+
+                                                <% }else{ %>
+                                                    <a href="/pmx/register" class="title-reg">
+                                                        REGISTER NOW
+                                                    </a>
+
+                                                    <% } %>
+                                                        <% }else{ %>
+                                                            <a href="#" class="title-reg" style="color: red;">
+                                                                REGISTRATION CLOSED
+                                                            </a>
+                                                            <% } %>
+
+                                                                &#8226;
+                                                                <a href="/events/pmx" class="title-knw">
+                                                                    Know More
+                                                                </a>
+                                                                <br>
+
+                                    </div>
+                                    <br>
+                                </div>
+                            </a>
+                            
+
+
+                            <!-- EVENT WORKSHOPS -->
+                            <div style="position:absolute; top:255px; left:21px; right:200px;" id="workshops-event-div">
+                                <svg width="110" height="105" viewBox="0 0 110 105" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M103.061 49.7185L64.5771 97.9542C58.4634 87.8501 52.4503 77.9067 46.5043 68.0747C34.3013 47.8967 22.3823 28.1878 10.4619 8.52393L103.061 49.7185Z"
+                                        stroke-width="7.67724" />
+                                </svg>
+                            </div>
+                            <div style="position:absolute; top:282px; left:-148px; right:200px;"
+                                id="workshops-event-line">
+                                <svg width="100" height="28" viewBox="0 0 100 28" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 27L99.841 0.661225" stroke-width="0.738725" />
+                                </svg>
+                            </div>
+                            <a href="/events/workshops" style="text-decoration: none; color: white;">
+                                <div class="events-head-list-title"
+                                    style="position:absolute; top:282px; left:-43%; right:0px; margin-left: 52%;margin-right:68%; text-align: right;"
+                                    id="workshops-event-text">WORKSHOPS
+                                    <div class="events-head-body" style="display:none; text-align: right;"
+                                        id="workshops-event-body">Sessions by industry experts to equip you with critical
+                                        skills.
+                                        <br>
+                                        <% if(data && data.workshop==1){ %>
+                                            <% if(userinfo && userinfo.workshops==1){ %>
+                                                <a href="#" class="title-reg">
+                                                    REGISTERED
+                                                </a> &#8226;
+                                                <a href="/events/workshops" class="title-knw">
+                                                    Know More
+                                                </a>
+
+                                                <% }else{ %>
+                                                    <a href="/events/workshops" class="title-reg">
+                                                        REGISTER NOW
+                                                    </a> &#8226;
+                                                    <a href="/events/workshops" class="title-knw">
+                                                        Know More
+                                                    </a>
+
+                                                    <% } %>
+                                                        <% }else{ %>
+                                                            <span href="#" class="title-reg">
+                                                                RELEASING SOON
+                                                            </span>
+                                                            <% } %>
+
+
+                                                                <!-- <a href="/events/workshops" class="title-knw">
+                                            Know More
+                                        </a> -->
+
+                                    </div>
+                                    <br>
+                                </div>
+                            </a>
+                            
+
+
+                            <!-- EVENT DISRUPT -->
+                            <div style="position:absolute; top:197px; left:189px; right:200px; z-index:-1;">
+                                <svg width="143" height="263" viewBox="0 0 143 263" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" id="disrupt-event-div">
+                                    <path
+                                        d="M5.16504 175.273L2.188 172.85L0.439839 174.997L1.92645 177.334L5.16504 175.273ZM132.206 19.2007L135.853 20.3982L142.324 0.689781L129.229 16.7774L132.206 19.2007ZM55.162 253.848L51.9234 255.908L56.2784 262.753L58.8091 255.045L55.162 253.848ZM8.14208 177.696L135.183 21.624L129.229 16.7774L2.188 172.85L8.14208 177.696ZM128.559 18.0032L51.515 252.65L58.8091 255.045L135.853 20.3982L128.559 18.0032ZM58.4006 251.787L8.40363 173.212L1.92645 177.334L51.9234 255.908L58.4006 251.787Z" />
+                                </svg>
+                            </div>
+                            <div style="position:absolute; top:334px; left:376px; right:200px;" id="disrupt-event-line">
+                                <svg width="138" height="60" viewBox="0 0 138 60" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.801758 0.537109L137 58.9999" stroke-width="0.738725" />
+                                </svg>
+                            </div>
+                            <a href="https://gotopitch.ai/cohort/61a27452b178565a9e1817aa" style="text-decoration: none; color: white;">
+                                <div class="events-head-list-title events-position-right"
+                                    style="position:absolute; top:370px; left: 63%; text-align:left; "
+                                    id="disrupt-event-text">
+                                    DISRUPT
+                                    <div class="events-head-body" style="text-align: left; display:none;"
+                                        id="disrupt-event-body">North East's Largest Pitching Battle.
+                                        <br>
+                                        <% if(data && data.disrupt==1){ %>
+                                            <% if(userinfo && userinfo.disrupt==1){ %>
+                                                <a href="#" class="title-reg">
+                                                    REGISTERED
+                                                </a>
+
+                                                <% }else{ %>
+                                                    <a href="https://gotopitch.ai/cohort/61a27452b178565a9e1817aa"
+                                                        class="title-reg" target="_blank">
+                                                        REGISTER NOW
+                                                    </a>
+
+                                                    <% } %>
+                                                        <% }else{ %>
+                                                            <span href="#" class="title-reg">
+                                                                RELEASING SOON
+                                                            </span>
+                                                            <% } %>
+                                                                &#8226;
+                                                                <a href="/events/disrupt"
+                                                                    class="title-knw" target="_blank">
+                                                                    Know More
+                                                                </a>
+                                                                <br>
+                                    </div>
+                                    <br>
+                                </div>
+                            </a>
+                            
+                            <div style="height:550px;"></div>
+                        </div>
+
+
+
+
+                    </div>
+
+                </section>
+
+                <!-- Events Section Phone -->
+
+                <section class="event-page  event-content-phone" style="padding: 10vh 10vw;">
+                    <div class="row justify-content-left">
+
+                        <div style="padding: 0 4.5vw !important;">
+                            <h2>
+                                <strong class="section-title" style="color:#00b0e0; ">
+                                    EVENTS
+                                </strong>
+                            </h2>
+                            <h6>
+                                A series of well-crafted events to equip you with the tools you need in your
+                                entrepreneurial journey.
+                            </h6>
+                        </div>
+                    </div>
+                    <br />
+
+                    <div class="row align-items-center ">
+
+                        <div class="pages col-10 align-self-center">
+                            <div class="page" style="padding: 0 15px; padding-right: 25px;">
+                                <div class="page-header " id="page-header">
+
+                                </div>
+                                <div class="page-body " id="page-body" style="padding-top: 20px;">
+                                    <div class="page_content">
+                                        <p class="page_paragraph" id='paragraph'>
+
+                                        </p>
+                                        <div class="row align-items-center justify-content-center">
+                                            <!-- EVENT INTERNFAIR -->
+                                            <div class="event-links">
+                                                <% if(data && data.internfair==1){ %>
+                                                    <% if(userinfo && userinfo.internfair==1){ %>
+                                                        <a href="#" class="title-reg">
+                                                            REGISTERED
+                                                        </a>
+                                                        &#8226;
+                                                                        <a href="/events/internfair" class="title-knw">
+                                                                            Know More
+                                                                        </a>
+
+                                                        <% }else{ %>
+                                                            <a href="https://docs.google.com/forms/d/1viFAgIEs7e8npfSJZlVLk4HKHEa6N5RyN6MxLcP7Z0g/edit?usp=sharing_eil_dm&ts=61a3bb22&urp=gmail_link"
+                                                                class="title-reg" target="_blank">
+                                                                REGISTER YOUR STARTUP
+                                                            </a>
+                                                            &#8226;
+                                                                        <a href="/events/internfair" class="title-knw">
+                                                                            Know More
+                                                                        </a>
+
+                                                            <% } %>
+                                                                <% }else{ %>
+                                                                    <a href="#" class="title-reg">
+
+                                                                        RELEASING SOON
+                                                                    </a>
+                                                                    <% } %>
+                                                                        
+                                            </div>
+                                            <!-- EVENT Lecture Series -->
+                                            <div class="event-links">
+                                                <% if(data && data.ls==1){ %>
+                                                    <% if(userinfo && userinfo.ls==1){ %>
+                                                        <a href="#" class="title-reg">
+                                                            REGISTERED
+                                                        </a>
+                                                        <a href="/events/lecture-series"
+                                                        class="title-knw">
+                                                        Know More
+                                                    </a>
+
+                                                        <% }else{ %>
+                                                            <a href="/lecture-series/register" class="title-reg">
+                                                                REGISTER NOW
+                                                            </a>
+                                                            <a href="/events/lecture-series"
+                                                            class="title-knw">
+                                                            Know More
+                                                        </a>
+                                                            <% } %>
+                                                                <% }else{ %>
+                                                                    <span href="#" class="title-reg">
+                                                                        RELEASING SOON
+                                                                    </span>
+                                                                    <% } %>
+
+                                                                      
+                                            </div>
+                                            <!-- EVENT PMx -->
+                                            <div class="event-links">
+                                                <% if(data && data.pmx==1){ %>
+                                                    <% if(userinfo && userinfo.pmx==1){ %>
+                                                        <a href="#" class="title-reg">
+                                                            REGISTERED
+                                                        </a>
+
+                                                        &#8226;
+                                                        <a href="/events/pmx" class="title-knw">
+                                                            Know More
+                                                        </a>
+
+                                                        <% }else{ %>
+                                                            <a href="/pmx/register" class="title-reg">
+                                                                REGISTER NOW
+                                                            </a>
+
+                                                            &#8226;
+                                                            <a href="/events/pmx" class="title-knw">
+                                                                Know More
+                                                            </a>
+
+                                                            <% } %>
+                                                                <% }else{ %>
+                                                                    <a href="#" class="title-reg" style="color: red;">
+                                                                        REGISTRATION CLOSED
+                                                                    </a>
+                                                                    <% } %>
+
+                                                                        <br>
+                                            </div>
+                                            <!-- EVENT Workshops -->
+                                            <div class="event-links">
+                                                <% if(data && data.workshop==1){ %>
+                                                    <% if(userinfo && userinfo.workshops==1){ %>
+                                                        <a href="#" class="title-reg">
+                                                            REGISTERED
+                                                        </a>
+                                                        &#8226;
+                                                        <a href="/events/workshops" class="title-knw">
+                                                            Know More
+                                                        </a>
+
+                                                        <% }else{ %>
+                                                            <a href="/events/workshops" class="title-reg">
+                                                                REGISTER NOW
+                                                            </a>
+                                                            &#8226;
+                                                            <a href="/events/workshops" class="title-knw">
+                                                                Know More
+                                                            </a>
+
+                                                            <% } %>
+                                                                <% }else{ %>
+                                                                    <span href="#" class="title-reg">
+                                                                        RELEASING SOON
+                                                                    </span>
+                                                                    <% } %>
+
+                                                                       
+                                                                        <br>
+                                            </div>
+                                            <!-- EVENT Disrupt -->
+                                            <div class="event-links">
+                                                <% if(data && data.disrupt==1){ %>
+                                                    <% if(userinfo && userinfo.disrupt==1){ %>
+                                                        <a href="#" class="title-reg">
+                                                            REGISTERED
+                                                        </a>
+                                                        &#8226;
+                                                                        <a href="/events/disrupt"
+                                                                            class="title-knw">
+                                                                            Know More
+                                                                        </a>
+
+                                                        <% }else{ %>
+                                                            <a href="https://gotopitch.ai/cohort/61a27452b178565a9e1817aa"
+                                                                class="title-reg" target="_blank">
+                                                                REGISTER NOW
+                                                            </a>
+                                                            &#8226;
+                                                                        <a href="/events/disrupt"
+                                                                            class="title-knw" >
+                                                                            Know More
+                                                                        </a>
+
+                                                            <% } %>
+                                                                <% }else{ %>
+                                                                    <span href="#" class="title-reg">
+                                                                        RELEASING SOON
+                                                                    </span>
+                                                                    <% } %>
+                                                                        
+                                                                        <br>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="controls col-2 align-self-center" id="controls"
+                            style="padding-left: 30px;border-right: solid 1px white;">
+
+                        </div>
+                    </div>
+
+                </section>
+
+                <div id="more-event" style="height: 60px;"></div>
+                <%- include("./partials/more-events.ejs") %>
+
+            </section>
+
+
+
+            <!-- Speakers Section -->
+            <section class="section-padding speaker-section ">
+                <div class="container" id="speakers">
+                    <div class="col-lg-12 col-xs-12">
+                        <div class="row justify-content-left">
+                            <div>
+                                <h2>
+                                    <strong class="section-title" style="color:#fc0144; ">PAST SPEAKERS</strong>
+                                </h2>
+                                <h6>
+                                    Have a look at the stellar lineup of prolific speakers, whose talks, anecdotes and
+                                    experiences given us unforgettable lessons in previous editions of UDGAM.
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div id="less-speakers" class="container speakers-row-1">
+                    <div class="speaker-info">
+                        <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter1">
+                            <img class="speaker__img" src="./static files/jimmy wales.png" alt="speaker img">
+                            <div class="speaker-side-name">
+                                Co-Founder
+                            </div>
+                            <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter1">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade blur" id="exampleModalCenter1" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                    style="max-width: 80vw;">
+                                    <div class="container modal-content" style="size:auto !important; border:none;">
+                                        <div class="row">
+                                            <div class="col-md-4"
+                                                style="background-color: #333333; justify-content: space-between;">
+                                                <div class="row">
+                                                    <img class="col-md-10 modalspeaker__img"
+                                                        src="./static files/jimmy wales.png" alt="speaker img">
+                                                    <div class="col-md-2 modal-social">
+                                                        <a href="https://www.linkedin.com/in/jimmy-wales-919a8b/ "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="linkedin button" src="static files\linkedin.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://twitter.com/jimmy_wales?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="twitter button" src="static files\twitter.png"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8"
+                                                style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                                <div class="modalspeakername">Jimmy Wales</div>
+                                                <div class="modalspeakerpostion"> Wikipedia <svg height="10" width="10">
+                                                        <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                            fill="black" />
+                                                    </svg> Co-Founder </div>
+                                                <p class="modalspeakerdetails" style="color: black;">He is a co-founder
+                                                    of the online non-profit encyclopedia Wikipedia.He currently serves
+                                                    as the Chair Emeritus and Board Member of the Wikimedia Foundation
+                                                    and Chair of Wikia, Inc.He earned bachelor's and master's degrees in
+                                                    finance from Auburn University and the University of Alabama
+                                                    respectively. He worked as Research Director at Chicago Options
+                                                    Associates, a futures and options trading firm then located in
+                                                    Chicago. Before coming up with the idea of wikipedia he had the
+                                                    concept of Nupedia but wikepedia became an instant success. In 2004,
+                                                    Jimmy founded Wikia. He was appointed a fellow of Harvard Law
+                                                    School’s Berkman Center for Internet and Society in mid-2005, and in
+                                                    October of 2005 joined the Board of Directors of Socialtext, a
+                                                    provider of wiki technology to businesses. By 2006 Wikipedia was
+                                                    available in a number of languages and was one of the Internet’s
+                                                    most popular sites.</p>
+                                            </div>
+                                            <button class="speaker-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-content">
+                                <div class="speaker-name">Jimmy Wales</div>
+                                <div class="speaker-company">Wikipedia </div>
+                            </div>
+                        </div>
+
+                        <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter2"
+                            data-target="#exampleModalCenter2">
+                            <img class="speaker__img" src="./static files/kevin-harrington-speaker-large.png"
+                                alt="speaker img">
+                            <div class="speaker-side-name">
+                                Original Shark
+                            </div>
+                            <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter2">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade blur" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                    style="max-width: 80vw;">
+                                    <div class="container modal-content" style="size:auto !important; border:none;">
+                                        <div class="row">
+                                            <div class="col-md-4"
+                                                style="background-color: #333333; justify-content: space-between;">
+                                                <div class="row">
+                                                    <img class="col-md-10 modalspeaker__img"
+                                                        src="./static files/kevin-harrington-speaker-large.png"
+                                                        alt="speaker img">
+                                                    <div class="col-md-2 modal-social">
+                                                        <a href="https://www.linkedin.com/in/thekevinharrington/ "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="linkedin button" src="static files\linkedin.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://www.facebook.com/officialkevinharrington "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="facebook button" src="static files\facebook.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://twitter.com/HarringtonKevin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="twitter button" src="static files\twitter.png"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8"
+                                                style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                                <div class="modalspeakername">Kevin Harrington</div>
+                                                <div class="modalspeakerpostion">Shark Tank <svg height="10" width="10">
+                                                        <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                            fill="black" />
+                                                    </svg> Co-Founder </div>
+                                                <p class="modalspeakerdetails" style="color: black;">He has emergerd out
+                                                    to be one of the most successful entrepreneur over the last 40 yrs.
+                                                    He has been an original Shark on ABC’s Emmy winning TV show, “Shark
+                                                    Tank” and inventor of the Infomercial.He is also a co-founder of the
+                                                    Entrepreneurs’ Organization, the world’s only peer-to-peer network
+                                                    exclusively for entrepreneurs and co- founder of the Electronic
+                                                    Retailers Association (ERA). His businesses have resulted in
+                                                    extensive experience all over the world in a variety of markets,
+                                                    including the opening of distribution outlets in over 100 countries
+                                                    worldwide. Currently, he is working with companies to increase
+                                                    distribution; analyze electronic retailing opportunities and
+                                                    effectively market on digital, social media, TV, radio, or print.
+                                                </p>
+                                            </div>
+                                            <button class="speaker-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-content">
+                                <div class="speaker-name">Kevin Harrington</div>
+                                <div class="speaker-company">Shark Tank </div>
+                            </div>
+                        </div>
+
+                        <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter3">
+                            <img class="speaker__img" src="./static files/michael seibel.png" alt="speaker img">
+                            <div class="speaker-side-name">
+                                Managing Director
+                            </div>
+                            <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter3">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade blur" id="exampleModalCenter3" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                    style="max-width: 80vw;">
+                                    <div class="container modal-content" style="size:auto !important; border:none;">
+                                        <div class="row">
+                                            <div class="col-md-4"
+                                                style="background-color: #333333; justify-content: space-between;">
+                                                <div class="row">
+                                                    <img class="col-md-10 modalspeaker__img"
+                                                        src="./static files/michael seibel.png" alt="speaker img">
+                                                    <div class="col-md-2 modal-social">
+                                                        <a href="https://www.linkedin.com/in/mwseibel/" target="_blank"
+                                                            class="modalicons">
+                                                            <img class="linkedin button" src="static files\linkedin.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://twitter.com/mwseibel" target="_blank"
+                                                            class="modalicons">
+                                                            <img class="twitter button" src="static files\twitter.png"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8"
+                                                style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                                <div class="modalspeakername">Michael Seibel</div>
+                                                <div class="modalspeakerpostion">Y Combinator <svg height="10"
+                                                        width="10">
+                                                        <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                            fill="black" />
+                                                    </svg> Managing Director </div>
+                                                <p class="modalspeakerdetails" style="color: black;">Michael Seibel
+                                                    (born October 7, 1982) is a Managing Director at Y Combinator and
+                                                    co-founder of two startups – Justin.tv/Twitch and Socialcam. Michael
+                                                    Seibel is a Group Partner and Managing Director, Early Stage at YC
+                                                    in 2013, advising hundreds of startups, and has been active in
+                                                    promoting diversity efforts among startup founders. Socialcam sold
+                                                    to Autodesk in 2012 and under the leadership of Emmett Shear,
+                                                    Justin.tv became Twitch.tv and sold to Amazon in 2014. Before
+                                                    getting into startups, he spent a year as the finance director for a
+                                                    US Senate campaign and in 2005, Michael graduated from Yale
+                                                    University with a BA in political science.</p>
+                                            </div>
+                                            <button class="speaker-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-content">
+                                <div class="speaker-name">Michael Seibel</div>
+                                <div class="speaker-company">Y Combinator </div>
+                            </div>
+                        </div>
+
+                        <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter4">
+                            <img class="speaker__img" src="./static files/Rohit-Kapoor.png" alt="speaker img">
+                            <div class="speaker-side-name" style="color: #f00;">
+                                CEO
+                            </div>
+                            <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter4">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade blur" id="exampleModalCenter4" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                    style="max-width: 80vw;">
+                                    <div class="container modal-content" style="size:auto !important; border:none;">
+                                        <div class="row">
+                                            <div class="col-md-4"
+                                                style="background-color: #333333; justify-content: space-between;">
+                                                <div class="row">
+                                                    <img class="col-md-10 modalspeaker__img"
+                                                        src="./static files/Rohit-Kapoor.png" alt="speaker img">
+                                                    <div class="col-md-2 modal-social">
+                                                        <a href="https://www.linkedin.com/in/rohit-kapoor-99a30436/ "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="linkedin button" src="static files\linkedin.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://twitter.com/rohitisb?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="twitter button" src="static files\twitter.png"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://www.instagram.com/rohitkapoor.in/?hl=enn "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="instagram button"
+                                                                src="static files\instagram.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8"
+                                                style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                                <div class="modalspeakername">Rohit Kapoor</div>
+                                                <div class="modalspeakerpostion">OYO (INSEA)<svg height="10" width="10">
+                                                        <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                            fill="black" />
+                                                    </svg> CEO </div>
+                                                <p class="modalspeakerdetails" style="color: black;">He is the CEO,
+                                                    India & South-East Asia (INSEA), at OYO. He is a seasoned
+                                                    professional with over 20 years of experience. He joined OYO in
+                                                    December 2018 as CEO, New Real Estate Businesses, and in the span of
+                                                    a year, led the formation and growth of OYO LIFE and OYO Workspaces
+                                                    in India. He has worked in various leadership positions across sales
+                                                    and finance in several companies such as Max India Limited and
+                                                    Mckinsey & Company. Prior to joining OYO, he was the Executive Board
+                                                    Member at Max Healthcare for close to 5 years. He has also been
+                                                    Senior Director-Strategy & Business Performance at Max. He is
+                                                    passionate about a quality education, and for access to
+                                                    opportunities being given to all. For this reason, he has been
+                                                    appointed as visiting faculty at SP Jain Institute of Management and
+                                                    Research, Harappa Education, IMT Ghaziabad, and Vedica Scholars- a
+                                                    programme for women to broaden their horizons. He also dons the hat
+                                                    of an investor across the domains of prop tech, health tech and
+                                                    fintech to name a few as he believes that entrepreneurial ambitions
+                                                    must be nourished, and is actively entrenched in the startup
+                                                    ecosystem of India.</p>
+                                            </div>
+                                            <button class="speaker-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-content">
+                                <div class="speaker-name">Rohit Kapoor</div>
+                                <div class="speaker-company">OYO (INSEA) </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="less-speakers" class="container speakers-row-2">
+                    <div class="speaker-info">
+                        <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter5" data-toggle="modal">
+                            <img class="speaker__img" src="./static files/Mostly sane.png" alt="speaker img">
+                            <div class="speaker-side-name" style="color: #f00;">
+                                Youtuber
+                            </div>
+                            <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter5">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade blur" id="exampleModalCenter5" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                    style="max-width: 80vw;">
+                                    <div class="container modal-content" style="size:auto !important; border:none;">
+                                        <div class="row">
+                                            <div class="col-md-4"
+                                                style="background-color: #333333; justify-content: space-between;">
+                                                <div class="row">
+                                                    <img class="col-md-10 modalspeaker__img"
+                                                        src="./static files/Mostly sane.png" alt="speaker img">
+                                                    <div class="col-md-2 modal-social">
+                                                        <a href="https://www.facebook.com/MostlySaneOfficial/"
+                                                            target="_blank" class="modalicons">
+                                                            <img class="facebook button" src="static files\facebook.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://twitter.com/iammostlysane" target="_blank"
+                                                            class="modalicons">
+                                                            <img class="twitter button" src="static files\twitter.png"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+
+                                                        <a href="https://www.instagram.com/mostlysane/?hl=en"
+                                                            target="_blank" class="modalicons">
+                                                            <img class="instagram button"
+                                                                src="static files\instagram.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8"
+                                                style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                                <div class="modalspeakername">Prajakta Koli</div>
+                                                <div class="modalspeakerpostion">Mostlysane <svg height="10" width="10">
+                                                        <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                            fill="black" />
+                                                    </svg>Youtuber</div>
+                                                <p class="modalspeakerdetails" style="color: black;">Prajakta Koli,
+                                                    known by her online alias Mostlysane, is an Indian YouTuber and
+                                                    actress who makes comedy videos. Her videos are focused mostly on
+                                                    relatable and observational comedy related to daily life situations.
+                                                    Koli began her career in media as an intern at Fever 104 FM radio
+                                                    station in Mumbai. After interning for a year, she was given her
+                                                    first show, Call Centre, which ultimately flopped and she quit her
+                                                    job. While working as an intern, Koli met future One Digital
+                                                    Entertainment vice-president Sudeep Lahiri, who encouraged her to
+                                                    launch a comedy YouTube channel. Koli launched her channel in
+                                                    February 2015.</p>
+                                            </div>
+                                            <button class="speaker-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-content">
+                                <div class="speaker-name">Prajakta Koli</div>
+                                <div class="speaker-company">Mostlysane </div>
+                            </div>
+                        </div>
+
+                        <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter6" data-toggle="modal">
+                            <img class="speaker__img" src="./static files/ankit nagori.png" alt="speaker img">
+                            <div class="speaker-side-name speaker-side-name-1" style="width: 280px; color: #f00;">
+                                Co-Founder
+                            </div>
+                            <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter6">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade blur" id="exampleModalCenter6" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                    style="max-width: 80vw;">
+                                    <div class="container modal-content" style="size:auto !important; border:none;">
+                                        <div class="row">
+                                            <div class="col-md-4"
+                                                style="background-color: #333333; justify-content: space-between;">
+                                                <div class="row">
+                                                    <img class="col-md-10 modalspeaker__img"
+                                                        src="./static files/ankit nagori.png" alt="speaker img">
+                                                    <div class="col-md-2 modal-social">
+                                                        <a href="https://www.linkedin.com/in/ankitnagori/?originalSubdomain=in "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="linkedin button" src="static files\linkedin.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8"
+                                                style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                                <div class="modalspeakername">Ankit Nagori</div>
+                                                <div class="modalspeakerpostion">Cure.fit <svg height="10" width="10">
+                                                        <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                            fill="black" />
+                                                    </svg> Co-Founder </div>
+                                                <p class="modalspeakerdetails" style="color: black;">He is the
+                                                    co-founder of Cure.fit and one of India’s best-known startup
+                                                    executives. He has gained his bachelor's degree from Indian
+                                                    Institute of Technology, Guwahati.Soon after graduation in 2007, he
+                                                    founded a social media startup, Youthpad, which he ran for three
+                                                    years. He then joined Flipkart as a manager, where he rose quickly
+                                                    across the ranks to spearhead the company’s operations as its Chief
+                                                    Business Officer. In 2016, after a six-year tenure at Flipkart, he
+                                                    left to establish cure.fit. In October last year, Cure.fit said it
+                                                    will spin out its cloud kitchen brand Eat.fit into a separate entity
+                                                    to enable the cloud kitchen business to raise equity capital
+                                                    independent of the holding company for business expansion. </p>
+                                            </div>
+                                            <button class="speaker-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-content">
+                                <div class="speaker-name">Ankit Nagori</div>
+                                <div class="speaker-company">Cure.fit </div>
+                            </div>
+                        </div>
+
+
+                        <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter7">
+                            <img class="speaker__img" src="./static files/Ankur-Warikoo.png" alt="speaker img">
+                            <div class="speaker-side-name" style="color: #f00;">
+                                Founder
+                            </div>
+                            <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter7">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade blur" id="exampleModalCenter7" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                    style="max-width: 80vw;">
+                                    <div class="container modal-content" style="size:auto !important; border:none;">
+                                        <div class="row">
+                                            <div class="col-md-4"
+                                                style="background-color: #333333; justify-content: space-between;">
+                                                <div class="row">
+                                                    <img class="col-md-10 modalspeaker__img"
+                                                        src="./static files/Ankur-Warikoo.png" alt="speaker img">
+                                                    <div class="col-md-2 modal-social">
+                                                        <a href="https://www.linkedin.com/in/warikoo/ " target="_blank"
+                                                            class="modalicons">
+                                                            <img class="linkedin button" src="static files\linkedin.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://twitter.com/warikoo?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="twitter button" src="static files\twitter.png"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://www.instagram.com/ankurwarikoo/?hl=en "
+                                                            target="_blank" class="modalicons">
+                                                            <img class="instagram button"
+                                                                src="static files\instagram.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8"
+                                                style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                                <div class="modalspeakername">Ankur Warikoo</div>
+                                                <div class="modalspeakerpostion">Nearbuy <svg height="10" width="10">
+                                                        <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                            fill="black" />
+                                                    </svg> Founder</div>
+                                                <p class="modalspeakerdetails" style="color: black;">He is an
+                                                    entrepreneur, a teacher, a content creator and a mentor, based out
+                                                    of India. He founded nearbuy.com in 2015 and was the CEO until 2019.
+                                                    Prior to that, he was the founding CEO of Groupon's India business
+                                                    from 2011 to 2015. He is a digital educator and conducts courses on
+                                                    entrepreneurship, career management and personal growth. Over
+                                                    80,000+ students have attended his courses so far. He loves spending
+                                                    time with first-time entrepreneurs hoping he can help them not make
+                                                    the same mistakes he made when we started up. Apart from this, he is
+                                                    a regular public speaker and social media influencer, with 3.8Mn+
+                                                    followers across Linkedin, Facebook, Instagram, Twitter and YouTube.
+                                                </p>
+                                            </div>
+                                            <button class="speaker-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-content">
+                                <div class="speaker-name">Ankur Warikoo</div>
+                                <div class="speaker-company">Nearbuy </div>
+                            </div>
+                        </div>
+
+                        <div class="speaker" data-toggle="modal" data-target="#exampleModalCenter8">
+                            <img class="speaker__img" src="./static files/Bindeshwar Pathak.png" alt="speaker img">
+                            <div class="speaker-side-name" style="color: #f00;">
+                                Founder
+                            </div>
+                            <button class="speaker-icon" data-toggle="modal" data-target="#exampleModalCenter8">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade blur" id="exampleModalCenter8" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document"
+                                    style="max-width: 80vw;">
+                                    <div class="container modal-content" style="size:auto !important; border:none;">
+                                        <div class="row">
+                                            <div class="col-md-4"
+                                                style="background-color: #333333; justify-content: space-between;">
+                                                <div class="row">
+                                                    <img class="col-md-10 modalspeaker__img"
+                                                        src="./static files/Bindeshwar Pathak.png" alt="speaker img">
+                                                    <div class="col-md-2 modal-social">
+                                                        <a href="https://www.facebook.com/drbindeshwarpathak"
+                                                            target="_blank" class="modalicons">
+                                                            <img class="facebook button" src="static files\facebook.svg"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                        <a href="https://twitter.com/bindeshwarpatha?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                                                            target="_blank" class="modalicons">
+                                                            <img class="twitter button" src="static files\twitter.png"
+                                                                style="width: 32px; height:32px;">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8"
+                                                style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                                <div class="modalspeakername">Dr. Bindeshwar Pathak</div>
+                                                <div class="modalspeakerpostion">Sulabh International <svg height="10"
+                                                        width="10">
+                                                        <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                            fill="black" />
+                                                    </svg> Founder </div>
+                                                <p class="modalspeakerdetails" style="color: black;">Bindeshwar Pathak
+                                                    is an Indian sociologist and social entrepreneur.[2] He is the
+                                                    founder of Sulabh International, an India-based social service
+                                                    organisation which works to promote human rights, environmental
+                                                    sanitation, non-conventional sources of energy, waste management and
+                                                    social reforms through education. He is the Brand Ambassador for
+                                                    Swachh Rail Mission of Indian Railways.[3] His work is considered
+                                                    pioneering in social reform, especially in the field of sanitation
+                                                    and hygiene. He received various national and international awards
+                                                    for his work with this organisation. He was presented with the Lal
+                                                    Bahadur Shastri National Award for Excellence in Public
+                                                    Administration, Academics and Management for the year 2017.[4] He
+                                                    was conferred with Padma Bhushan, India's third-highest civilian
+                                                    award in 1991.</p>
+                                            </div>
+                                            <button class="speaker-icon">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="speaker-content">
+                                <div class="speaker-name">Bindeshwar Pathak</div>
+                                <div class="speaker-company">Sulabh International </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-events-heading container" style="display: flex; justify-content: end;">
+                    <a href="./speakers" style="color: #00b0e0;">
+                        VIEW ALL SPEAKERS
+                        <i class="fas fa-chevron-right sponsor-icon"></i>
+                    </a>
+                    <br>
+                </div>
+
+
+
+
+            </section>
+
+
+            <!-- UDGAM -->
+            <section class="section-padding udgam-section" id="aboutus">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-6 align-self-center">
+
+                            <!-- <div class="row"> -->
+                            <h1 class="about-us" style="padding: 0 0;">
+                                What is
+                                <strong>
+                                    UDGAM
+                                </strong>
+                                ?
+                            </h1>
+                            <br>
+                            <p>
+                                UDGAM, the annual entrepreneurship summit of IITG, is the flagship event of E-Cell IITG
+                                which acts as a platform for students, aspiring entrepreneurs to interact with industry
+                                experts, venture capitalists, and startups to gain insights on the entrepreneurial
+                                ecosystem and to start successful business ventures.
+                            </p>
+                            <p>
+                                This is done through a variety of brainstorming activities and insightful sessions by
+                                experts conducted as a part of the UDGAM initiative.
+                            </p>
+                            <!-- </div> -->
+                        </div>
+
+                        <div class="col-md-4 space">
+                            <br>
+                            <div style="text-align: center; justify-content: center;">
+
+                                <img src="static files/UDGAM logo home.png" alt="UDGAM img">
+
+                            </div>
+                            <div class="row" style=" 
+font-family: Texta Alt;
+font-style: normal;
+font-weight: bold;
+font-size: 72px;
+line-height: 65px;
+/* or 90% */
+
+text-align: center;
+
+/* #F4FDFF */
+
+color: #F4FDFF;
+text-align: center; justify-content: center;">
+                                YOU’RE <br> INVITED
+                            </div>
+
+                            <div class="row" style="font-family: Texta;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 17.6323px;
+                        line-height: 18px;
+                        /* or 100% */
+                        
+                        text-align: center;
+                        
+                        /* #F4FDFF */
+                        
+                        color: #F4FDFF;
+                         text-align: center; justify-content: center;">
+                                <br>
+                                14-23 January
+                            </div>
+                            <br>
+                            <br>
+                            <div class="row" style="text-align: center; justify-content: center;">
+                                <button type="button" class="btn btn-light">
+                                    <% if(userinfo && userinfo.upass==0){ %>
+                                        <a href="#events-main" style="color: black;">
+
+                                            Explore Events
+                                        </a>
+                                        <% }else if(userinfo && userinfo.upass==1) {%>
+                                            <a href="#events-main" style="color: black;">
+
+                                                Explore Events
+                                            </a>
+
+                                            <% }else{ %>
+                                                <a href="/register" style="color: black;">
+
+                                                    REGISTER
+                                                </a>
+                                                <% } %>
+                                </button>
+                            </div>
+                            <br>
+                            <br>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12 align-self-center">
+                            <h1>SPONSORS</h1>
+                            <p>
+                                The backbone of Udgam, without whose support Udgam wouldn’t have become what it is
+                                today.
+                            </p>
+                            <br>
+                            <a href="/sponsors" style="font-size: 20px;color: #00b0e0;">
+                                VIEW ALL SPONSORS
+                                <span>
+                                    <i class="fas fa-chevron-right sponsor-icon"></i>
+                                </span>
+
+                            </a>
+                                <br><br>
+                               <a href="/contactus" style="color: white;font-size: 20px;"> BECOME A SPONSOR </a>
+                        </div>
+                        
+                        <div class="col-lg-6 col-md-6 col-12 text-center">
+                            <img src="static files/Sponsor-home.png" alt="" width="80%" class="sponsor-img">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FAQ-->
+
+            <div id="FAQsection" class="container">
+                <div>
+                    <div class="FAQheading">
+
+                        <h2>
+                            <strong class="section-title" style="color:#FB750E; ">FAQ</strong>
+                        </h2>
+                    </div>
+                    <div class="FAQsubtext">
+                        <p>We know you have your doubts. The Best people do.</p>
+                    </div>
+                </div>
+                <br>
+                <div class="faqdropdown">
+                    <div class="faquestion row" onclick='faqdrop(1)'>
+                        <div class="question col-10">
+                            What is UDGAM?
+                        </div>
+                        <div class="col-2 align-self-center faqanswer1 text-right">
+                            <i class="fas fa-chevron-down"></i>
+
+                        </div>
+                    </div>
+                    <div class="faqanswer" id="faqanswer1"></div>
+                    <hr style="width:100%; background-color:white; align-self: center;">
+                    <div class="faquestion row" onclick="faqdrop(2)">
+                        <div class="question col-10">
+                            Would COVID restrictions affect my participation?
+                        </div>
+                        <div class="col-2 align-self-center faqanswer2 text-right">
+                            <i class="fas fa-chevron-down"></i>
+
+                        </div>
+                    </div>
+
+                    <div class="faqanswer" id="faqanswer2"></div>
+                    <hr style="width:100%; background-color:white; align-self: center;">
+                    <div class="faquestion row " onclick="faqdrop(3)">
+                        <div class="question col-10">
+
+                            Is it necessary to participate in a competition to be part of the summit?
+                        </div>
+                        <div class="col-2 align-self-center faqanswer3 text-right">
+                            <i class="fas fa-chevron-down"></i>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="faqanswer" id="faqanswer3"></div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion row" onclick="faqdrop(4)">
+                    <div class="question col-10">
+
+                        Who can participate in UDGAM?
+                    </div>
+                    <div class="col-2 align-self-center faqanswer4 text-right">
+                        <i class="fas fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+                <div class="faqanswer" id="faqanswer4"></div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion row" onclick="faqdrop(5)">
+                    <div class="question col-10">
+                        Will we get recordings of keynotes and panel discussions?
+
+                    </div>
+
+                    <div class="col-2 align-self-center faqanswer5 text-right">
+                        <i class="fas fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+                <div class="faqanswer" id="faqanswer5"></div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion row" onclick="faqdrop(6)">
+                    <div class="question col-10">
+
+                        What are the perks of attending the E-Summit?
+                    </div>
+                    <div class="col-2 align-self-center faqanswer6 text-right">
+                        <i class="fas fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+                <div class="faqanswer" id="faqanswer6"></div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion row" onclick="faqdrop(7)">
+                    <div class="question col-10">
+
+                        How will I know if my registration is approved?
+                    </div>
+                    <div class="col-2 align-self-center faqanswer7 text-right">
+                        <i class="fas fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+                <div class="faqanswer" id="faqanswer7"></div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion row" onclick="faqdrop(8)">
+                    <div class="question col-10">
+
+                        Is my ticket transferable?
+                    </div>
+                    <div class="col-2 align-self-center faqanswer8 text-right">
+                        <i class="fas fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+                <div class="faqanswer" id="faqanswer8"></div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <div class="faquestion row" onclick="faqdrop(9)">
+                    <div class="question col-10">
+                        Is my ticket price refundable?
+                    </div>
+                    <div class="col-2 align-self-center faqanswer9 text-right">
+                        <i class="fas fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+                <div class="faqanswer" id="faqanswer9"></div>
+                <hr style="width:100%; background-color:white; align-self: center;">
+                <br><br><br>
+            </div>
+            </div>
+
+
+            <div id="arrows_section" class="container">
+                <div class="arrow_cont pc">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                </div>
+                <div class="arrow_cont mobile">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img left_arrows" src="static files/arrow.svg" alt="Arrow">
+                </div>
+                <div class="bottom_sphere_cont"></div>
+                <!-- <div class="bottom_sphere_cont mobile"></div> -->
+                <div class="arrow_cont pc">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                </div>
+
+
+
+                <div class="arrow_cont mobile">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+                    <img class="arrow_img right_arrows" src="static files/arrow.svg" alt="Arrow">
+
+                </div>
+            </div>
+
+            
+            <div class="countdown-section">
+                <span class="container-fluid"
+                    style=" display: flex; justify-content: center; align-items: center;padding-bottom: 0.5%;">COUNTDOWN
+
+                    TO UDGAM 2022</span>
+                <div id="countdown-timer">
+
+                </div>
+            </div>
+
+
+            <!-- footer -->
+            <%- include("./partials/footer.ejs") %>
+
+           
+    </main>
+
+   
+    
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- three.js -->
+    <script src="../js/three.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+    <script>
+        //ANIMATIOn FOR INTERNFAIR EVENT
+        $(function () {
+            $('#internfair-event-div').hover(function () {
+                $('#internfair-event-line').css('stroke', '#00b0e0');
+                $('#internfair-event-div').css('stroke', '#00b0e0');
+                $('#internfair-event-text').css('color', '#00b0e0');
+                $('#internfair-event-div').css('transform', 'scale(1.05)');
+                $('#internfair-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#internfair-event-line').css('stroke', 'white');
+                $('#internfair-event-div').css('stroke', 'white');
+                $('#internfair-event-text').css('color', 'white');
+                $('#internfair-event-div').css('transform', 'scale(1)');
+                $('#internfair-event-body').css('display', 'none');
+            });
+            $('#internfair-event-line').hover(function () {
+                $('#internfair-event-line').css('stroke', '#00b0e0');
+                $('#internfair-event-div').css('stroke', '#00b0e0');
+                $('#internfair-event-text').css('color', '#00b0e0');
+                $('#internfair-event-div').css('transform', 'scale(1.05)');
+                $('#internfair-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#internfair-event-line').css('stroke', 'white');
+                $('#internfair-event-div').css('stroke', 'white');
+                $('#internfair-event-text').css('color', 'white');
+                $('#internfair-event-div').css('transform', 'scale(1)');
+                $('#internfair-event-body').css('display', 'none');
+            });
+            $('#internfair-event-text').hover(function () {
+                $('#internfair-event-line').css('stroke', '#00b0e0');
+                $('#internfair-event-div').css('stroke', '#00b0e0');
+                $('#internfair-event-text').css('color', '#00b0e0');
+                $('#internfair-event-div').css('transform', 'scale(1..05)');
+                $('#internfair-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#internfair-event-line').css('stroke', 'white');
+                $('#internfair-event-div').css('stroke', 'white');
+                $('#internfair-event-text').css('color', 'white');
+                $('#internfair-event-div').css('transform', 'scale(1)');
+                $('#internfair-event-body').css('display', 'none');
+            });
+        });
+        //ANIMATIOn FOR LECTURESERIES EVENT
+        $(function () {
+            $('#lectureseries-event-div').hover(function () {
+                $('#lectureseries-event-line').css('stroke', '#00b0e0');
+                $('#lectureseries-event-div').css('stroke', '#00b0e0');
+                $('#lectureseries-event-text').css('color', '#00b0e0');
+                $('#lectureseries-event-div').css('transform', 'scale(1..05)');
+                $('#lectureseries-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#lectureseries-event-line').css('stroke', 'white');
+                $('#lectureseries-event-div').css('stroke', 'white');
+                $('#lectureseries-event-text').css('color', 'white');
+                $('#lectureseries-event-div').css('transform', 'scale(1)');
+                $('#lectureseries-event-body').css('display', 'none');
+            });
+            $('#lectureseries-event-line').hover(function () {
+                $('#lectureseries-event-line').css('stroke', '#00b0e0');
+                $('#lectureseries-event-div').css('stroke', '#00b0e0');
+                $('#lectureseries-event-text').css('color', '#00b0e0');
+                $('#lectureseries-event-div').css('transform', 'scale(1.05)');
+                $('#lectureseries-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#lectureseries-event-line').css('stroke', 'white');
+                $('#lectureseries-event-div').css('stroke', 'white');
+                $('#lectureseries-event-text').css('color', 'white');
+                $('#lectureseries-event-div').css('transform', 'scale(1)');
+                $('#lectureseries-event-body').css('display', 'none');
+            });
+            $('#lectureseries-event-text').hover(function () {
+                $('#lectureseries-event-line').css('stroke', '#00b0e0');
+                $('#lectureseries-event-div').css('stroke', '#00b0e0');
+                $('#lectureseries-event-text').css('color', '#00b0e0');
+                $('#lectureseries-event-div').css('transform', 'scale(1.05)');
+                $('#lectureseries-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#lectureseries-event-line').css('stroke', 'white');
+                $('#lectureseries-event-div').css('stroke', 'white');
+                $('#lectureseries-event-text').css('color', 'white');
+                $('#lectureseries-event-div').css('transform', 'scale(1)');
+                $('#lectureseries-event-body').css('display', 'none');
+            });
+        });
+        //ANIMATIOn FOR PMX EVENT
+        $(function () {
+            $('#pmx-event-div').hover(function () {
+                $('#pmx-event-line').css('stroke', '#00b0e0');
+                $('#pmx-event-div').css('stroke', '#00b0e0');
+                $('#pmx-event-text').css('color', '#00b0e0');
+                $('#pmx-event-div').css('transform', 'scale(1.05)');
+                $('#pmx-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#pmx-event-line').css('stroke', 'white');
+                $('#pmx-event-div').css('stroke', 'white');
+                $('#pmx-event-text').css('color', 'white');
+                $('#pmx-event-div').css('transform', 'scale(1)');
+                $('#pmx-event-body').css('display', 'none');
+            });
+            $('#pmx-event-line').hover(function () {
+                $('#pmx-event-line').css('stroke', '#00b0e0');
+                $('#pmx-event-div').css('stroke', '#00b0e0');
+                $('#pmx-event-text').css('color', '#00b0e0');
+                $('#pmx-event-div').css('transform', 'scale(1.05)');
+                $('#pmx-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#pmx-event-line').css('stroke', 'white');
+                $('#pmx-event-div').css('stroke', 'white');
+                $('#pmx-event-text').css('color', 'white');
+                $('#pmx-event-div').css('transform', 'scale(1)');
+                $('#pmx-event-body').css('display', 'none');
+            });
+            $('#pmx-event-text').hover(function () {
+                $('#pmx-event-line').css('stroke', '#00b0e0');
+                $('#pmx-event-div').css('stroke', '#00b0e0');
+                $('#pmx-event-text').css('color', '#00b0e0');
+                $('#pmx-event-div').css('transform', 'scale(1.05)');
+                $('#pmx-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#pmx-event-line').css('stroke', 'white');
+                $('#pmx-event-div').css('stroke', 'white');
+                $('#pmx-event-text').css('color', 'white');
+                $('#pmx-event-div').css('transform', 'scale(1)');
+                $('#pmx-event-body').css('display', 'none');
+            });
+        });
+        //ANIMATIOn FOR WORKSHOPS EVENT
+        $(function () {
+            $('#workshops-event-div').hover(function () {
+                $('#workshops-event-line').css('stroke', '#00b0e0');
+                $('#workshops-event-div').css('stroke', '#00b0e0');
+                $('#workshops-event-text').css('color', '#00b0e0');
+                $('#workshops-event-div').css('transform', 'scale(1.05)');
+                $('#workshops-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#workshops-event-line').css('stroke', 'white');
+                $('#workshops-event-div').css('stroke', 'white');
+                $('#workshops-event-text').css('color', 'white');
+                $('#workshops-event-div').css('transform', 'scale(1)');
+                $('#workshops-event-body').css('display', 'none');
+            });
+            $('#workshops-event-line').hover(function () {
+                $('#workshops-event-line').css('stroke', '#00b0e0');
+                $('#workshops-event-div').css('stroke', '#00b0e0');
+                $('#workshops-event-text').css('color', '#00b0e0');
+                $('#workshops-event-div').css('transform', 'scale(1.05)');
+                $('#workshops-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#workshops-event-line').css('stroke', 'white');
+                $('#workshops-event-div').css('stroke', 'white');
+                $('#workshops-event-text').css('color', 'white');
+                $('#workshops-event-div').css('transform', 'scale(1)');
+                $('#workshops-event-body').css('display', 'none');
+            });
+            $('#workshops-event-text').hover(function () {
+                $('#workshops-event-line').css('stroke', '#00b0e0');
+                $('#workshops-event-div').css('stroke', '#00b0e0');
+                $('#workshops-event-text').css('color', '#00b0e0');
+                $('#workshops-event-div').css('transform', 'scale(1.05)');
+                $('#workshops-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#workshops-event-line').css('stroke', 'white');
+                $('#workshops-event-div').css('stroke', 'white');
+                $('#workshops-event-text').css('color', 'white');
+                $('#workshops-event-div').css('transform', 'scale(1)');
+                $('#workshops-event-body').css('display', 'none');
+            });
+        });
+        //ANIMATIOn FOR DISRUPT EVENT
+        $(function () {
+            $('#disrupt-event-div').hover(function () {
+                $('#disrupt-event-line').css('stroke', '#00b0e0');
+                $('#disrupt-event-div').css('fill', '#00b0e0');
+                $('#disrupt-event-text').css('color', '#00b0e0');
+                $('#disrupt-event-div').css('transform', 'scale(1.05)');
+                $('#disrupt-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#disrupt-event-line').css('stroke', 'white');
+                $('#disrupt-event-div').css('fill', 'white');
+                $('#disrupt-event-text').css('color', 'white');
+                $('#disrupt-event-div').css('transform', 'scale(1)');
+                $('#disrupt-event-body').css('display', 'none');
+            });
+            $('#disrupt-event-line').hover(function () {
+                $('#disrupt-event-line').css('stroke', '#00b0e0');
+                $('#disrupt-event-div').css('fill', '#00b0e0');
+                $('#disrupt-event-text').css('color', '#00b0e0');
+                $('#disrupt-event-div').css('transform', 'scale(1.05)');
+                $('#disrupt-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#disrupt-event-line').css('stroke', 'white');
+                $('#disrupt-event-div').css('fill', 'white');
+                $('#disrupt-event-text').css('color', 'white');
+                $('#disrupt-event-div').css('transform', 'scale(1)');
+                $('#disrupt-event-body').css('display', 'none');
+            });
+            $('#disrupt-event-text').hover(function () {
+                $('#disrupt-event-line').css('stroke', '#00b0e0');
+                $('#disrupt-event-div').css('fill', '#00b0e0');
+                $('#disrupt-event-text').css('color', '#00b0e0');
+                $('#disrupt-event-div').css('transform', 'scale(1.05)');
+                $('#disrupt-event-body').css('display', 'block');
+            }, function () {
+                // on mouseout, reset the background colour
+                $('#disrupt-event-line').css('stroke', 'white');
+                $('#disrupt-event-div').css('fill', 'white');
+                $('#disrupt-event-text').css('color', 'white');
+                $('#disrupt-event-div').css('transform', 'scale(1)');
+                $('#disrupt-event-body').css('display', 'none');
+            });
+        });
+
+    </script>
+    <script>
+
+        (window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+        });
+    </script>
+    <script>
+
+        function faqdrop(number) {
+            let content = "";
+            switch (number) {
+                case 1:
+                    // body of case 1
+                    content = "UDGAM is the Annual Entrepreneurship Summit of IIT Guwahati, which is held to bring together the academic community, new-age entrepreneurs, industry leaders, and investors on a common platform"
+                    break;
+
+                case 2:
+                    // body of case 2
+                    content = "Don't worry we've got you covered. This edition of E-Summit is completely online and you can attend it from any part of the world!"
+                    break;
+
+                case 3:
+                    content = "No, we have separate passes for all those who want to attend speaker sessions, fun events, and workshops."
+                    break;
+                case 4:
+                    content = "Students, professionals, professors, or anyone wanting to learn about entrepreneurship and develop their skills all can be a part of the summit."
+                    break;
+                case 5:
+                    content = "Yes, If you have purchased the UDGAM pass and somehow miss the lecture, You’ll be provided with the recordings post the event which you can access forever."
+                    break;
+                case 6:
+                    content = "Apart from an awesome learning experience, you are in for some fun activities and a chance to win goodies and certificates from E-Cell IIT Guwahati."
+                    break;
+                case 7:
+                    content = "You will receive a mail confirming your registration for Udgam. Make sure you purchased the correct pass. If you don’t find the mail in your inbox please check your spambox."
+                    break;
+                case 8:
+                    content = "No, the person who has registered for the event can join the events. No one else will be allowed to join in his/her place."
+                    break;
+                case 9:
+                    content = "The ticket price is refundable only if the event for which you have registered is canceled."
+                    break;
+            }
+            let faqstring = 'faqanswer';
+            faqstring = faqstring.concat(number)
+            let answer = document.getElementById(faqstring).innerHTML;
+            if (answer == "") {
+                document.getElementById(faqstring).innerHTML = content;
+                document.getElementsByClassName(faqstring)[0].innerHTML = '<i class="fas fa-chevron-up" ></i>';
+            }
+            else {
+                document.getElementById(faqstring).innerHTML = "";
+                document.getElementsByClassName(faqstring)[0].innerHTML = '<i class="fas fa-chevron-down" ></i>';
+            }
+        }
+    </script>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Jan 14, 2022 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var daysp = (days / 10 < 1) ? "0" : "";
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var hoursp = (hours / 10 < 1) ? "0" : "";
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var minutesp = (minutes / 10 < 1) ? "0" : "";
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            var secondsp = (seconds / 10 < 1) ? "0" : "";
+
+            // Output the result in an element with id="demo"
+            document.getElementById("countdown-timer").innerHTML = daysp + days + "<sup>D</sup>" + hoursp + hours + "<sup>H</sup>"
+                + minutesp + minutes + "<sup>M</sup>" + secondsp + seconds + "<sup>S</sup>";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown-timer").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+
+
+        function moreSpeakers() {
+            let show = document.getElementById('more-speakers');
+            console.log(show);
+            show.style.display = 'block';
+            let hide = document.getElementById('show-more-speakers');
+            hide.style.display = 'none';
+        }
+
+        function moreEvents() {
+            let show = document.getElementsByClassName('more-events');
+            let toggle = document.getElementById('show-more-events');
+            let str = toggle.innerHTML;
+            // console.log(str.includes('up'));
+            if (str.includes('up')) {
+                // console.log('yes');
+
+            }
+
+            console.log(show);
+
+            Array.from(show).forEach(element => {
+                console.log(element);
+                if (str.includes('down')) {
+                    // console.log('yes');
+                    element.style.display = 'flex';
+                    toggle.innerHTML = `<a href="#events-collapse" style="font-size:16px; align-items:center;">show less <i class="fas fa-chevron-up" style="color:#00b0e0;"></i></a>`;
+                } else {
+                    let target = document.getElementById('events-collapse');
+                    console.log(target);
+                    element.style.display = 'none';
+                    toggle.innerHTML = `show more <i class="fas fa-chevron-down" style="color:#00b0e0;"></i>`;
+                }
+            });
+
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <script type="module" src="../js/homepage_animation.js"></script>
+
+    <script src="../carousel/script.js">
+    </script>
+    <script src="../navbar.js"></script>
+    <script src="../js/hamberger.js"></script>
+
+
+    <script>
+        window.onload = function() {
+          //  alert(navigator.userAgent);
+            if (navigator.userAgent.indexOf("Firefox") > 0) {
+                alert("For better experience, use Google Chrome");
+            }
+        }
+        window.onload = function() {
+            
+            var pageTitle = document.title;
+            var attentionMessage = 'We miss you!';
+
+            document.addEventListener('visibilitychange', function(e) {
+            var isPageActive = !document.hidden;
+
+            if(!isPageActive){
+                document.title = attentionMessage;
+            }else {
+                document.title = pageTitle;
+            }
+            });
+};
+    </script>
+
+</body>
+
+</html>

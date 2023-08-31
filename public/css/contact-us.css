@@ -1,0 +1,325 @@
+
+@font-face {
+  font-family: "Texta";
+  src: url("Texta-Regular.eot");
+  src: local("Texta"), local("Texta-Regular"),
+    url("Texta-Regular.eot?#iefix") format("embedded-opentype"),
+    url("Texta-Regular.woff2") format("woff2"),
+    url("Texta-Regular.woff") format("woff"),
+    url("Texta-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  font-style: Texta;
+  font-weight: 600;
+  color: white;
+
+}
+
+/* ------------------------- end ------------------------- */
+
+.con-title{
+      
+  font-family: Texta;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+  /* identical to box height */
+
+
+  /* #00B0E0 */
+
+  color: #00B0E0;
+
+}
+.con-main-title{
+
+  font-family: Texta;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 101px;
+  /* identical to box height */
+
+
+  /* #00B0E0 */
+
+  color: #00B0E0;
+
+
+}
+.contact-us{
+  padding: 0 10vw !important;
+  
+}
+.footer-sec{
+  padding: 0 0vw !important;
+}
+@media screen and (max-width: 768px) {
+  .desc-con{
+    font-size: 12px !important;
+  }
+  .reason{
+    padding-left: 5% !important;
+    padding-top: 10px !important;
+  }
+}
+
+.reason{
+  padding-top: 50px;
+}
+
+.desc-con{
+  font-size: 20px;
+}
+
+/* ------------------------- mobile-view ------------------------- */
+
+@media screen and (max-width: 767px) {
+  input[type="email"]
+    {
+        
+      font-size: 15px !important;
+      line-height: 25px !important;
+      
+      padding: 2.5px 5px !important;
+    }
+    input[type="text"]
+    {
+      padding: 2.5px 5px !important;
+      
+      font-size: 15px !important;
+      line-height: 25px !important;
+
+    }
+ 
+  .label{
+    font-size: 12px !important;
+  }
+  .con-main-title{
+    font-size: 24px !important;
+  }
+  .con-title,div div .p{
+    font-size: 18px !important;
+  }
+  .textbox, textarea{
+    
+    font-size: 12px !important;
+  }
+
+  /* *{
+    font-size: 12px !important;
+  } */
+  .msg{
+    margin-top: 2.5vh; margin-bottom: 2.5vh;
+  }
+  .email-ext{
+    margin-top: 2.5vh; margin-bottom: 2.5vh;
+  }
+  .extra-con{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between !important;
+  }
+    
+ 
+}
+
+select {
+  background-color: transparent !important;
+  color:white;
+  padding-right: 5px !important;
+}
+
+select option {
+  border: 1px solid black !important;
+  padding: 3px 1px !important;
+  color:black !important;
+}
+
+
+input[type="text"],
+input[type="email"]{
+  width: 100% !important;
+}
+
+
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="submit"]
+{
+  background: transparent !important;
+  border: solid 1px white !important;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 25px;
+
+}
+  
+
+.img1:hover {
+  content: url('../static files/contact_us/ankit-1.png');
+}
+.img2:hover {
+  content: url('../static files/contact_us/ayush-1.png');
+}
+.img3:hover {
+  content: url('../static files/contact_us/janvi-1.png');
+}
+.img4:hover {
+  content: url('../static files/contact_us/manav-1.png');
+}
+.img5:hover {
+  content: url('../static files/contact_us/mayank-1.png');
+}
+.img6:hover {
+  content: url('../static files/contact_us/prakhar-1.png');
+}
+.img7:hover {
+  content: url('../static files/contact_us/sai-1.png');
+}
+.img8:hover {
+  content: url('../static files/contact_us/shambhawi-1.png');
+}
+.img9:hover {
+  content: url('../static files/contact_us/shyam-1.png');
+}
+
+
+/* .speaker:hover .speaker-icon {
+  background-color: #00B0E0 !important;
+}
+
+
+.speaker:hover .speaker-icon i {
+  color: white !important;
+}
+
+
+.speaker .speaker-icon {
+  border: 2px solid #00B0E0 !important;
+  background-color: #ffffff !important;
+}
+
+.speaker-icon i {
+  color: #00B0E0 !important;
+}
+
+.speaker-content .speaker-name::first-letter {
+  color: #00B0E0 !important;
+  font-size: 18px !important;
+}
+
+.speaker-content .speaker-name::first-letter {
+  color: #00B0E0 !important;
+  font-size: 27px !important;
+} */
+
+/* @media (min-width: 100px) and (max-width: 365px){
+  *{
+    font-size: 12px ;
+  }
+} */
+
+/* ------------------------- end ------------------------- */
+
+
+.msg{
+  margin-top: 5vh; margin-bottom: 15vh;
+}
+
+input,textarea{
+  padding: 10px !important;
+}
+#t{
+	padding-right: 2vw;
+}
+#b{
+	background-color: transparent;
+
+	border-color: white;
+	padding: 4px 6px;
+	border-top-width: 1px;
+ 	border-left-width: 1px;
+}
+.sp-butt{
+  margin: 0 5px ;
+}
+#b1{
+	
+	background-color: transparent;
+	margin-right:5px;
+	border-color: white;
+	padding: 6px;
+	border-top-width: 1px;
+ 	border-left-width: 1px;
+}
+#s{
+	background-color:#00B0E0;
+	padding:6px;
+	border-color: transparent;
+
+}
+
+.c{
+margin-top:3vh;
+margin-bottom: 3vh;
+
+}
+
+.contact{
+  margin-top: 6vh;
+  margin-bottom: .5vh;
+}
+
+
+#textbox{
+width:100%;
+height:35px;
+background-color: transparent;
+border-color: white;
+border-bottom-width: 1px;
+border-right-width: 1px;
+
+}
+textarea{
+background-color: transparent;
+border-color: white;
+border-radius: 0px;
+font-size: 16px !important;
+}
+
+.modal-backdrop{
+  z-index: 0 !important;
+}
+
+
+
+
+.speaker {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#inputAddress:active {
+  color: white;
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  
+.space {
+  margin-top: 30px;
+}
+
+}
+
+
+
+
+
+

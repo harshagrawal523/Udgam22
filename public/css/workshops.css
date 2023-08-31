@@ -1,0 +1,81 @@
+ blockquote {
+    border-right: 1px solid;
+    border-left: 10px solid;
+    border-color: #ed5565;
+    padding: 0 20px;
+}
+ .name {
+    color: #ed5565;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+ .block2 .name,  .block3 .name,   .block4 .name {
+    display: inline-block;
+    border-bottom: 3px solid;
+    width: 60%;
+    padding-bottom: 8px;
+}
+ .block3,  .block4 {
+    position: relative;
+}
+ .block3 .quote,  .block4 .quote {
+    padding-bottom: 8px;
+}
+ .block3:before,  .block4:before {
+    height: 2px;
+    background: #ed5565;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 20px;
+    left: 60%;
+}
+ .block4 .name {
+    border: none;
+    padding: 0;
+}
+ .block4:before {
+    right: 100%;
+    transition: 0.7s;
+}
+ .block4:after {
+    height: 2px;
+    background: white;
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 40%;
+    left: 0;
+}
+ .block4 .quote {
+    position: relative;
+    padding-top: 8px;
+}
+ .block4 .quote:before {
+    height: 2px;
+    background: #ed5565;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 100%;
+    transition: 0.7s;
+}
+ .block4 .quote:after {
+    height: 2px;
+    background: white;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 60%;
+    right: 0%;
+}
+ .block4:hover:before {
+    right: 20px;
+}
+ .block4:hover .quote:before {
+    right: 0%;
+}

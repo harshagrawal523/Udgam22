@@ -1,0 +1,366 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scavenger Hunt | Buy</title>
+    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    
+        <link rel="stylesheet" href="../css/events.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../font/stylesheet.css">
+        <link rel="stylesheet" href="../css/hamberger.css">
+    
+         
+        
+        <!-- <link rel="icon" href=""> -->
+        <link rel="icon" href="../static files/UDGAM logo (title).png" type="image/icon type">
+        <!-- link for font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="../carousel/style.css">
+    </head>
+    
+    <body>
+         <!-- navbar -->
+         <%- include("./partials/nav.ejs") %>
+        
+    
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+        <div class="main">
+            <br>
+            <br>
+            <br>
+    
+            <section class="section-padding" id="event">
+                <div class="title">
+                    Scavenger Hunt - Merchandise
+                </div><br>
+                <div>Didn't we all dream about "That T-shirt" featuring your college name! The subtle flex? <br>
+                    The wait is over! E-Cell brings to you, the first merchandise of your college life!<br>
+                    As a part of the Heist, Grab your official Scavenger Hunt Merchandise NOW!</div>
+                <br>
+                
+            
+                <form class="reg-form-div" id="reg-form-div"  style="margin-top: 40px; margin-bottom: 250px;" action="/sh-temp" method="POST">
+                    <div class="container content">
+                        <div class="row justify-content-between form-img-div" >
+                            <div class="col-12 col-sm-12 col-md-6 order-2 order-lg-1 order-md-1 RegistrationDetails" style="margin-top: 0%;">
+                                <div class="alert alert-secondary" role="alert">
+                                    White &#8226; Premium Dry Fit &#8226; Round Neck T-Shirt &#8226; Free Delivery
+                                  </div>
+                                  <br>
+                                <input type="text" id="workname" name="workname" value="CREATING & FUNDING STARTUP" style="display: none;">
+                                <label for="name" class=" title-b " >NAME</label>
+                                <input type="text" id="name" name="name" required>
+                                <br>
+                                <!-- <label for="emailID" class=" title-b ">EMAIL ID</label>
+                                <input type="text" id="emailID" name="emailID"  required> -->
+                                <br>
+                                <label for="email" class=" title-b ">EMAIL</label>
+                                <input type="email" id="email" name="email" required>
+                                <br>
+                                <label for="phone" class=" title-b ">PHONE</label>
+                                <input type="number" id="phone" name="phone" required>
+                                <br>
+                                <label for="exampleFormControlSelect1" class=" title-b " style="text-transform: uppercase;">Size</label>
+                                    <select class="form-control" id="exampleFormControlSelect1" name="size" style="color: white !important;background: transparent !important;">
+                                        <option value="XS">XS</option>
+                                        <option value="S">S</option>
+                                        <option value="M">M</option>
+                                        <option value="L">L</option>
+                                        <option value="XL">XL</option>
+                                        <option value="XXL">XXL</option>
+                                    </select>
+                                    <br>
+                                <label for="Address1" class=" title-b ">ADDRESS LINE 1</label>
+                                <input type="text" id="Address1" name="Address1" required>
+                                <br>
+                                <label for="Address2" class=" title-b ">ADDRESS LINE 2</label>
+                                <input type="text" id="Address2" name="Address2"> 
+                                <br>
+                                <label for="city" class=" title-b ">CITY</label>
+                                <input type="text" id="city" name="city" required> 
+                                <br>
+                                <label for="state" class=" title-b ">STATE</label>
+                                <input type="text" id="state" name="state" required> 
+                                <br>
+                                <label for="pincode" class=" title-b ">PINCODE</label>
+                                <input type="number" id="pincode" name="pincode" required>                                
+                                
+                               
+                            </form>
+                            <div class="content"> 
+                                <div class="form-row " style="padding-top: 60px;">
+                                    <div class="form-group">
+                                        <label for="" style="padding-left: 5px;" class=" title-b ">
+                                            Do you want to confirm your Registration?
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-between">
+                                    <!-- <div class="form-group col-md-6" >
+                                        <div id="confirmdiv">
+                                            <a class="btn btn-primary" style="width: 100%;" onclick="check()" id="confirm">Confirm Detail</a>
+            
+                                        </div>
+                                    </div> -->
+                                    <div class="form-group col-12" >
+                                        <div id="rzp-button1div">
+                                            <button class="btn btn-primary" style="width: 100%;" id="rzp-button1" >Register and Pay</button>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-5 order-1 order-lg-2 order-md-2 text-center align-self-top "  >
+                                <img src="../static files/Front.png" width="80%" alt="">
+                                <br><br>
+                                <img src="../static files/BACK.png" width="80%" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    
+
+
+                
+	
+                <script src="https://checkout.razorpay.com/v1/checkout.js"></script> <!--  razorpay CDN -->
+                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  <!--  axios CDN -->
+                <script>
+                    function ValidateEmail(input) {
+
+                        var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+
+                        if (input.value.match(validRegex)) {
+
+                            return true;
+
+                        } else {
+
+                            return false;
+
+                        }
+
+                    }
+
+                    function validate() {
+                        var form = document.getElementById("reg-form-div");
+      
+                        if( form.name.value == "" ) {
+
+                            // alert( "Please provide your name!" );
+                            form.Name.focus() ;
+                            return false;
+                        }
+                        if( form.email.value == "" ) {
+                            // alert( "Please provide your Email!" );
+                            form.email.focus() ;
+                            return false;
+                        }
+                        else{
+                            return ValidateEmail(form.email);
+                        }
+                        if( form.Address1.value == "" ) {
+                            // alert( "Please provide your Address!" );
+                            form.Address1.focus() ;
+                            return false;
+                        }
+                        if( form.pincode.value == ""||
+                            form.pincode.value.length != 6 ) {
+                            
+                            // alert( "Please provide a zip in the format ######." );
+                            form.pincode.focus() ;
+                            return false;
+                        }
+                        if( form.city.value == "" ) {
+                            form.city.focus() ;
+                            // alert( "Please provide your city!" );
+                            return false;
+                        }
+                        if( form.state.value == "" ) {
+                            // alert( "Please provide your state!" );
+                            form.state.focus() ;
+                            return false;
+                        }
+
+                        return( true );
+                    }
+                </script>
+                <script>
+                    function check(){
+                                if(validate()){
+                                    console.log("validated");
+                                    var form = document.getElementById("reg-form-div");
+                                    var elements = form.elements;
+                                    for (var i = 0, len = elements.length; i < len; ++i) {
+                                        elements[i].readOnly = true;
+                                    }
+                                    document.getElementById('confirmdiv').style.display = 'none';
+                                    document.getElementById('rzp-button1div').style.display = 'block';
+                                }
+                                else{
+                                    alert("Please fill all details");
+                                }
+                                
+                            };
+                </script>
+                <script>
+                        axios.post('/order_sh').then((info)=>{
+                        console.log(info);
+                        var options = {
+                            "key": "rzp_live_XynAEQxlW1VHdf", // Enter the Key ID generated from the Dashboard
+                            "amount": info.data.order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
+                            "currency": "INR",
+                            "name": "Scavenger Hunt",
+                            "description": "Merchandise Transaction",
+                            "image": "",
+                            "order_id": info.data.order.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+                            "callback_url": "/order-verify/"+info.data.userdetail.username,
+                            "prefill": {
+
+                            },
+                            "notes": {
+                                // "address": "UDGAM 2022"
+                            },
+                            "theme": {
+                                "color": "#3399cc" //we can change theme color by changing this value
+                            },
+                            "handler": function (response){
+                                alert("Payment Succesful. Please save following info for duture reference.\nOrder id: "+ response.razorpay_order_id +"\nPayment id: "+response.razorpay_payment_id+ "\n Signature: "+response.razorpay_signature);
+                                document.getElementById("reg-form-div").submit();
+                                // alert(response.razorpay_payment_id);    
+                                // alert(response.razorpay_order_id);    
+                                // alert(response.razorpay_signature)
+                            }
+                        };
+                            //invoking razorpay payment portal
+                            var rzp1 = new Razorpay(options);
+                            document.getElementById('rzp-button1').onclick = function(e){
+                                if(validate()){
+                                    rzp1.open();
+                                    e.preventDefault();   
+                                }
+                                else{
+                                    alert("Please fill all details");
+                                    e.preventDefault();   
+                                }
+                                                             
+                            };
+                            rzp1.on('payment.failed', function (response){
+                            alert("Payment failed. Please save following info for duture reference.\nError code: " + response.error.code + "\nError description: "+response.error.description+ "\nError metadata order_id: "+ response.error.metadata.order_id +"\nError metadata payment id: "+response.error.metadata.payment_id);
+                        });
+                    })
+                  
+                </script>
+    
+            </section>
+            
+           <!-- Workshop Section -->
+            <%- include("./partials/workshops_partials.ejs") %>
+
+            <br><br>
+            <%- include("./partials/all-events.ejs") %>
+               
+        </div>
+         
+         <!-- footer -->
+         <%- include("./partials/footer.ejs") %>
+    
+    
+    <!-- message on inactive tab -->
+    <%- include("./partials/inactive-tab-message.ejs") %>
+
+    
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    
+        
+        <script>
+            $(window).scroll(function () {
+                $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+            });
+        </script>
+         <script>
+            $("select").change(function () {
+                if ($(this).val() == 5) {
+                    console.log("you selected CA");
+                    showmore();
+                } else {
+
+                    showless();
+                }
+                console.log("you changed the value");
+                
+            });
+        </script>
+    
+       
+        <script>
+            function moreEvents() {
+                let show = document.getElementsByClassName('more-events');
+                let toggle = document.getElementById('show-more-events');
+                let str = toggle.innerHTML;
+                // console.log(str.includes('up'));
+                if (str.includes('up')) {
+                    // console.log('yes');
+    
+                }
+    
+                console.log(show);
+    
+                Array.from(show).forEach(element => {
+                    console.log(element);
+                    if (str.includes('down')) {
+                        // console.log('yes');
+                        element.style.display = 'flex';
+                        toggle.innerHTML = `<a href="#events-collapse" style="font-size:16px; align-items:center;">show less <i class="fas fa-chevron-up" style="color:#00b0e0;"></i></a>`;
+                    } else {
+                        let target = document.getElementById('events-collapse');
+                        console.log(target);
+                        element.style.display = 'none';
+                        toggle.innerHTML = `show more <i class="fas fa-chevron-down" style="color:#00b0e0;"></i>`;
+                    }
+                });
+            }
+        </script>
+        <script>
+            function showmore() {
+                document.getElementById("CAReferral").style.display = 'block';
+    
+            }
+            function showless() {
+                document.getElementById("CAReferral").style.display = 'none';
+            }
+        </script>
+        <script src="../js/hamberger.js"></script>
+
+        <!-- three.js -->
+        <script src="../js/three.js"></script>
+
+        <script type="module" src="../js/top_sphere.js"></script>
+    
+    </body>
+    
+    </html>
+    
+    

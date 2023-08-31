@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>UDGAM | Register</title>
+    
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    
+        <link rel="stylesheet" href="../css/registeration.css">
+        <link rel="stylesheet" href="../css/index.css">
+
+        <link rel="stylesheet" href="../font/stylesheet.css">
+    
+         
+        
+        
+        <!-- <link rel="icon" href=""> -->
+        <link rel="icon" href="../static files/UDGAM logo (title).png" type="image/icon type">
+        <!-- link for font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="../carousel/style.css">
+        <link rel="stylesheet" href="../css/hamberger.css">
+    </head>
+
+    <style>
+        
+        .email-check-icons-register{
+            position: absolute;
+        left: 94%;
+        top: 37%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        pointer-events: none;
+        width: 20px;
+        height: 20px;
+        transition: all .25s ease;
+        }
+        @media screen and (max-width:768px) {
+            .email-check-icons-register{
+                left: 90% !important;
+
+            }
+        }
+    </style>
+<body>
+
+    <section class="maindata">
+
+        <!-- navbar -->
+     <%- include("./partials/nav.ejs") %>
+
+        <section class="main">
+
+
+            <div class="mainheading">
+                <div class="heading">
+                    REGISTER NOW
+                </div>
+                <div class="headingsub">
+                    What are you waiting for? Go ahead and embark upon an exhilarating ride of knowledge, fun and value addition. 
+                </div>
+            </div>
+        
+            
+            <% if(errdata == 1){ %>
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                
+                        <h6 style="margin: 0;color:black;"><%= msg%></h6>
+                    </div>
+                    <%}%>
+
+
+                    
+                    <div class="content">
+                        <div class="row align-items-center justify-content-start">
+
+                            <div class="col-3 d-md-none"></div>
+                            <div class="col-md-5 col-6 ProfilePic" id="astronaut_cont" style="position: relative; box-sizing: border-box;">
+                                <!-- <div id="astronaut" style="position: abosulute; height:100%; width:100%;"></div> -->
+                            </div>
+                            <form id="register-form" class="col-sm-7 RegistrationDetails" style="margin-top: 0%;" action="/register" method="POST">
+
+                                <div class="form-row row justify-content-end">
+
+
+                                    <label class="col-sm-12 col-md-10" for="fname" style="margin-top: 0px" >NAME</label>
+                                    <input class="col-sm-12 col-md-10" type="text" id="name" name="name" required>
+                                    <label class="col-sm-12 col-md-10" for="College">YOU ARE FROM</label>
+                                    <input class="col-sm-12 col-md-10" type="text" name = "college" id = "college" placeholder="Institute" required>
+                        
+                                    <label class="col-sm-12 col-md-10" for="emailID">EMAIL ID</label>
+                                    <input class="col-sm-12 col-md-10" type="email"  oninput="handleInput(event)" id="email" name="email"  required >
+                                    
+                                    <div class="icons email-check-icons-register align-self-center footer-mail-icon">
+                                        <i class='check-icon bx bxs-check-circle check' ></i>
+                                        <i class='check-icon bx bxs-x-circle x' ></i>
+                                      </div>
+
+                                    <label class="col-sm-12 col-md-10" for="password">PASSWORD</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="" type="password" id="password" name="password"  style="width:100% "  required>
+                                        <svg id="passwordicon" onclick="passwordshow()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash">
+                                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                                        </svg>
+                                    </div>
+                                
+                                    <label class="col-sm-12 col-md-10" for="password">Confirm Password</label>
+                                    <div class="col-sm-12 col-md-10">
+                                        <input class="" type="password" id="password2" name="password2"  style="width:100% "  required>
+                                        <svg id="passwordicon" onclick="passwordshow2()" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash">
+                                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/>
+                                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>
+                                        </svg>
+                                    </div>
+
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <button class="col-sm-12 col-md-10 button-register" type="submit" style="background-color: transparent; border: 1px solid white;">Create Account</button>
+
+                                    <span class="col-sm-12 col-md-10" style="width: 100%; text-align: center;">OR</span>
+                                    <button class="col-sm-12 col-md-10 button-register" type="button" onclick="window.location.href='/login'" style="background-color: transparent; border: 1px solid white;">LOGIN USING AN EXISTING ACCOUNT</button>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+                    </div>
+            
+
+
+        </section>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+
+     <!-- footer -->
+     <%- include("./partials/footer.ejs") %>
+    
+
+    <!-- message on inactive tab -->
+    <%- include("./partials/inactive-tab-message.ejs") %>
+
+      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+
+      <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+        });
+        </script>
+
+        <script>
+            function passwordshow() {
+                    var x = document.getElementById("password");
+                    if (x.type === "password"){
+                        x.type = "text";
+                        var y = document.getElementById("passwordicon");
+                        y.innerHTML =  '<path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/><path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/><path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/>'
+                    } 
+                    else{
+                        x.type = "password";
+                        var y = document.getElementById("passwordicon");
+                        y.innerHTML = '<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>'
+                    }
+
+                }
+            function passwordshow2() {
+                    var x = document.getElementById("password2");
+                    if (x.type === "password"){
+                        x.type = "text";
+                        var y = document.getElementById("passwordicon2");
+                        y.innerHTML =  '<path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/><path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/><path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z"/>'
+                    } 
+                    else{
+                        x.type = "password";
+                        var y = document.getElementById("passwordicon");
+                        y.innerHTML = '<path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/>'
+                    }
+
+                }
+        </script>
+
+
+           
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script type="module" src="../js/astronaut.js"></script>
+    <script src="../js/hamberger.js"></script>
+
+
+     <!-- three.js -->
+     <script src="../js/three.js"></script>
+
+     <script type="module" src="../js/top_sphere.js"></script>
+        
+    
+     <div class="stars"></div>
+     <div class="twinkling"></div>
+     <div class="clouds"></div>
+    
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Panel Discussion</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/hamberger.css">
+    <!-- <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../public/css/events.css">
+    <link rel="stylesheet" href="../public/css/index.css"> -->
+
+    <!-- <link rel="icon" href=""> -->
+    <link rel="icon" href="../static files/UDGAM logo (title).png" type="image/icon type">
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../carousel/style.css">
+</head>
+
+<body>
+
+     <!-- navbar -->
+     <%- include("./partials/nav.ejs") %>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <div class="main">
+        <br>
+        <br>
+        <br>
+
+        <section class="section-padding" id="event">
+            <div class="title">
+                PANEL DISCUSSION
+            </div>
+
+            <section class="section-padding" id="event-cnt" style="margin-top: 120px;">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-sm-12 col-md-6 order-2 order-lg-1 order-md-1 extra text-left">
+                        <p>
+                            What better can it get than listening to industry experts deliberate over aspects of business, current market trends , scope in the future and many more topics. Join us live for such intriguing sessions.
+                        </p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 order-1 order-lg-2 order-md-2 align-self-center event-img"  style="border: solid 1px #C4C4C4; background-color: white;">
+                        <!-- <img src="../public/static files/img_avatar.png" class="img-fluid" alt="" width="300" height="300"> -->
+                    </div>
+                </div>
+            
+                                <div class="row justify-content-between" style="padding: 20px 10px 20px 10px; border: solid 1px #C4C4C4; margin: 125px 0px;">
+
+                    <div class="col-12 col-sm-12 col-md-3 align-self-start reg-bor">
+                        <div class="head">
+                            REG. DEADLINE
+                        </div>
+                        <div class="context">
+                            GOOGOGOGOGOGO
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-2 align-self-start reg-bor">
+                        <div class="head">
+                            TEAM SIZE
+                        </div>
+                        <div class="context">
+                            INDIVISUAL
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 align-self-start reg-bor">
+                        <div class="head">
+                            PAID/NOT PAID
+                        </div>
+                        <div class="context">
+                            GOOGOGOGOGOGO
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 align-self-center">
+                        <div class="row justify-content-center">
+                            <% if(data.pd==1){ %> 
+                                <% if(userinfo && userinfo.pd==1){ %>
+                                <a href="#">
+                                    <button type="button" class="btn btn-primary reg-butt">REGISTERED</button>
+                                </a>
+                                <% }else{ %>  
+                                <a href="/panel-discussion/register">
+                                    <button type="button" class="btn btn-primary reg-butt">REGISTER</button>
+                                </a>
+                                <% } %> 
+                            <% }else{ %> 
+                                <a href="#">
+                                    <button type="button" class="btn btn-primary reg-butt">Releasing Soon</button>
+                                </a>
+                            <% } %> 
+                                
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        
+        <!-- Events Section -->
+        <%- include("./partials/all-events.ejs") %>
+           
+    </div>
+     <!-- footer -->
+
+      <%- include("./partials/footer.ejs") %>
+
+
+    <!-- message on inactive tab -->
+    <%- include("./partials/inactive-tab-message.ejs") %>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    
+    <script>
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+        });
+    </script>
+    <script>
+        function showmore() {
+            document.getElementById("CAReferral").style.display = 'block';
+
+        }
+        function showless() {
+            document.getElementById("CAReferral").style.display = 'none';
+        }
+    </script>
+
+    <script>
+
+        function register() {
+            let show = document.getElementById('reg-form-div');
+            console.log(show);
+            show.style.display = 'block';
+            let hide = document.getElementById('event-cnt');
+            hide.style.display = 'none';
+        }
+        function reg_back() {
+            let show = document.getElementById('event-cnt');
+            console.log(show);
+            show.style.display = 'block';
+            let hide = document.getElementById('reg-form-div');
+            hide.style.display = 'none';
+        }
+    </script>
+
+    <script>
+        function moreEvents() {
+            let show = document.getElementsByClassName('more-events');
+            let toggle = document.getElementById('show-more-events');
+            let str = toggle.innerHTML;
+            // console.log(str.includes('up'));
+            if (str.includes('up')) {
+                // console.log('yes');
+
+            }
+
+            console.log(show);
+
+            Array.from(show).forEach(element => {
+                console.log(element);
+                if (str.includes('down')) {
+                    // console.log('yes');
+                    element.style.display = 'flex';
+                    toggle.innerHTML = `<a href="#events-collapse" style="font-size:16px; align-items:center;">show less <i class="fas fa-chevron-up" style="color:#00b0e0;"></i></a>`;
+                } else {
+                    let target = document.getElementById('events-collapse');
+                    console.log(target);
+                    element.style.display = 'none';
+                    toggle.innerHTML = `show more <i class="fas fa-chevron-down" style="color:#00b0e0;"></i>`;
+                }
+            });
+        }
+    </script>
+    <script src="../js/hamberger.js"></script>
+
+    <!-- three.js -->
+    <script src="../js/three.js"></script>
+
+    <script type="module" src="../js/top_sphere.js"></script>
+
+</body>
+
+</html>

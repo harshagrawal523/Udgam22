@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDGAM DASHBOARD</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="stylesheet" href="../css/hamberger.css">
+
+    <link rel="icon" href="Group 33786.png">
+
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+
+<style>
+    .close span{
+        color: black !important;
+    }
+    .heading p{
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="clouds"></div>
+    <%- include("./partials/nav.ejs") %>
+    <div class="container">
+        
+        
+        <div style="height: 10vh;"></div>
+        <div class="heading">
+            <h1>Hi
+                <%= userinfo.displayName%> !
+
+            </h1>
+            <p>Welcome to your UDGAM dashboard. Your one stop portal for all event information.</p>
+        </div>
+
+            <% if(token == 1){ %>
+
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    Name updated (Reload Page to see updates)
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+
+
+                <% }else if(token == 2){ %>
+
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        Password updated
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+
+
+                    <% }else if(token == 3){ %>
+
+                        <div class="alert alert-danger  alert-dismissible fade show" role="alert">
+                            Password incorrect
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                          </div>
+                          
+                          
+                          <% }else if(token == 4){ %>
+                            
+    
+                            <div class="alert alert-danger  alert-dismissible fade show" role="alert">
+                                Password and confirm password didn't match!
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+    
+                            <% } %>
+
+
+        <div class="profile">
+            <div class="profile-img">
+                <img src="../static files/dashboard-pic.png" alt="profile img">
+            </div>
+            <div class="profile-text">
+                <div class="row justify-content-between">
+                    <div class="profile-content col-sm-7 col-xs-7 col-md-9 col-lg-9">
+                        <p>NAME</p>
+                        <h5><%= userinfo.displayName%></h5>
+                    </div>
+                    <div type="button" class="col-sm-3 col-xs-3 col-md-3 col-lg-3 align-self-end text-right" style="padding-bottom: 0px;" data-toggle="modal" data-target="#editnameModal" > 
+                        Edit Name 
+                        <i class="fas fa-edit"></i>
+                    </div> 
+                </div>
+                
+                <center>
+           
+
+                        <div class="modal fade" id="editnameModal" tabindex="-1" role="dialog" aria-labelledby="editnameModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content p-4 "> 
+                                    
+                                    <!-- <div class="modal-header border-0 mb-2">
+                                        <h5 class="modal-title" id="editnameModalLabel"></h5> <button type="button" class="close" aria-label="Close" disabled='true'> <span aria-hidden="true">Log in</span> </button>
+                                    </div> -->
+                                    <div class="modal-body">
+                                    <form action = "/edit_name" method = "POST">
+                                   
+                                        <h3 class=" title modal-text">Edit Name</h3>
+                                     
+                                        <input type="text" id="name"  name  = "name" class="form-control col-12 col-md-12" required style="max-width: 100% !important;box-shadow: none;border-radius:0px">
+
+                                      <br>
+                                  
+                                        <input type="submit" class="btn submit col-12 col-md-12" style="background-color : #00B0E0;">SUBMIT</button> 
+                                 
+
+                                </form> 
+                                </div>
+                            </div>
+                        </div>
+                   
+
+                </center>
+                                
+                <div class="profile-content">
+                    <p>USER ID</p>
+                    <h5><%= userinfo.uid %></h5>
+                </div>
+
+                <div class="profile-content">
+                    <p>UDGAM PASS ID</p>
+                    <% if(userinfo.upass == 1){ %>
+                    <h5><%= userinfo.upassid%> <i class="fal fa-clipboard"></i></h5>
+                    <%}else{ %>
+                        <h5>Pass Releasing Soon</h5>
+                    <%}%>
+                </div>
+
+                <div class="profile-content">
+                    <p>EMAIL ID</p>
+                    <h5><%= userinfo.email%></h5>
+                </div>
+
+                <button type="button" class="edit-btn"  data-toggle="modal" data-target="#modalEditPass">EDIT PASSWORD</button>
+
+                <button onclick="window.location.href='auth/logout'" type="button" class="logout-btn">LOGOUT</button>
+                
+                
+                <!--Modal: Login with Avatar Form-->
+                <center>
+                 
+
+                    <div class="modal fade blur"id="modalEditPass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered  cascading-modal modal-avatar"  role="document">
+                            <!--Content-->
+                            <div class="modal-content text-center ">
+
+                               
+                                <form action = "/edit_password" method = "POST">
+
+                                    <h5 class="modal-text" style="margin-top: 20px;">EDIT PASSWORD</h5>
+                                    <div class="col-12">
+                                        <div class="md-form row justify-content-start modal-text mt-3">
+                                            <label data-error="wrong" data-success="right" for="form29">Enter old password</label>
+                                            <input type="password" type="text" id="opass" name = "opass" class="form-control form-control-sm validate" required>
+                                        </div>
+                                        <div class="md-form row justify-content-start modal-text mt-3">
+                                            <label data-error="wrong" data-success="right" for="form30">Enter new password</label>
+                                            <input type="password" type="text" id="npass" name = "npass" class="form-control form-control-sm validate" required>
+                                        </div>
+                                        <div class="md-form row justify-content-start modal-text mt-3">
+                                            <label data-error="wrong" data-success="right" for="form31">Confirm new password</label>
+                                            <input type="password" type="text" id="cnpass" name = "cnpass" class="form-control form-control-sm validate" required>
+                                        </div>
+                                        <br>
+                                        <div class="row justify-content-center align-items-center">
+                                            <input type="submit" class="btn btn-primary text-center" value="Confirm"></input>
+                                        </div>
+                                        <br>
+                                    </div>
+                                    
+
+                                    
+                                </form>
+
+                            </div>
+                            <!--/.Content-->
+                        </div>
+                    </div>
+
+                   
+
+                <!--Modal: Login with Avatar Form-->
+                </center>
+
+                
+            </div>
+        </div>
+        <div class="events">
+            <div class="events-heading">
+                <h1 class="events-scheduled active" onclick="various()">EVENTS LAUNCHED &nbsp;</h1>
+                <h1 class="events-added disable" onclick="added()"> My Events</h1>
+            </div>
+            <!-- <div class="events-btn">
+                <button>ADD ALL EVENST TO CALENDER</button>
+                <button>EVENTS TODAY</button>
+            </div> -->
+        </div>
+
+        <div class="various-events" id="default-events">
+            <% if(data.pmx == 1 ){ %> 
+                <% if(userinfo  && userinfo.pmx==0){ %>
+
+            <div class="single-event">
+
+                <div class="event-details">
+                    <p>PMx</p>
+                    <!-- <span style="font-size: 18px; font-weight: 400;"> </span> -->
+                    <p>Product Management Expedition</p>
+                </div>
+                <a href="/events/pmx"><button class="know-more-butt">
+                        Know More
+                </button> </a>
+            </div>
+            <% } %> 
+            <% } %> 
+            <% if(data.disrupt == 1){ %> 
+                <% if(userinfo  && userinfo.disrupt==0){ %>
+                <div class="single-event">
+                    <div class="event-details">
+                        <p>Disrupt </p>
+                        <p>The ultimate pitching battle is back</p>
+                    </div>
+                    <a href="/events/disrupt" target="_blank"><button class="know-more-butt">
+                            Know More
+                    </button> </a>
+                </div>
+                <% }} %> 
+                <% if(data.dframe == 1){ %> 
+                    <% if(userinfo  && userinfo.dframe==0){ %>
+                    <div class="single-event">
+                        <div class="event-details">
+                            <p>Dframe </p>
+                            <p>October 30th, 2021</p>
+                        </div>
+                        <a href=""><button class="know-more-butt">
+                                Know More
+                        </button> </a>
+                    </div>
+                    <% }} %> 
+                    <% if(data.coding_colab == 1){ %> 
+                        <% if(userinfo  && userinfo.coding_colab==0){ %>
+                        <div class="single-event">
+                            <div class="event-details">
+                                <p>Coding Collab </p>
+                                <p>October 30th, 2021</p>
+                            </div>
+                            <a href=""><button class="know-more-butt">
+                                    Know More
+                            </button> </a>
+                        </div>
+                        <% }} %> 
+                        <% if(data.stratergy_strom == 1){ %> 
+                            <% if(userinfo  && userinfo.stratergy_strom==0){ %>
+                            <div class="single-event">
+                                <div class="event-details">
+                                    <p>Strategy Storm </p>
+                                    <p>October 30th, 2021</p>
+                                </div>
+                                <a href=""><button class="know-more-butt">
+                                        Know More
+                                </button> </a>
+                            </div>
+                            <% }} %> 
+                            <% if(data.sparkle == 1){ %> 
+                                <% if(userinfo  && userinfo.sparkle==0){ %>
+                                <div class="single-event">
+                                    <div class="event-details">
+                                        <p>Sparkle </p>
+                                        <p>It's never too early to start.</p>
+                                    </div>
+                                    <a href="https://udgam-iitg.in/events/sparkle"><button class="know-more-butt">
+                                            Know More
+                                    </button> </a>
+                                </div>
+                                <% }} %> 
+                            <% if(data.gaming == 1){ %> 
+                                <% if(userinfo  && userinfo.gaming==0){ %>
+                                <div class="single-event">
+                                    <div class="event-details">
+                                        <p>Gaming </p>
+                                        <p>October 30th, 2021</p>
+                                    </div>
+                                    <a href=""><button class="know-more-butt">
+                                            Know More
+                                    </button> </a>
+                                </div>
+                                <% }} %> 
+                                <% if(data.internfair == 1){ %> 
+                                    <% if(userinfo  && userinfo.internfair==0){ %>
+                                    <div class="single-event">
+                                        <div class="event-details">
+                                            <p>Intern Fair </p>
+                                            <p>Get internships at startups</p>
+                                        </div>
+                                        <a href="/events/internfair"><button class="know-more-butt">
+                                                Know More
+                                        </button> </a>
+                                    </div>
+                                    <% }} %> 
+                                    <% if(data.nec == 1){ %> 
+                                        <% if(userinfo  && userinfo.nec==0){ %>
+                                        <div class="single-event">
+                                            <div class="event-details">
+                                                <p>NEC </p>
+                                                <p>October 30th, 2021</p>
+                                            </div>
+                                            <a href=""><button class="know-more-butt">
+                                                    Know More
+                                            </button> </a>
+                                        </div>
+                                        <% }} %> 
+                                        <% if(data.ls == 1){ %> 
+                                            <% if(userinfo  && userinfo.ls==0){ %>
+                                            <div class="single-event">
+                                                <div class="event-details">
+                                                    <p>Lecture Series </p>
+                                                    <p>October 30th, 2021</p>
+                                                </div>
+                                                <a href="/events/lecture-series"><button class="know-more-butt">
+                                                        Know More
+                                                </button> </a>
+                                            </div>
+                                            <% }}%> 
+                                <% if(data.pd == 1){ %> 
+                                    <% if(userinfo  && userinfo.pd==0){ %>
+            <div class="single-event">
+                <div class="event-details">
+                    <p>Panel Discussions </p>
+                    <p>October 30th, 2021</p>
+                </div>
+                <a href="/events/panel-discussion/"><button class="know-more-butt">
+                        Know More
+                </button> </a>
+            </div>
+            <% }} %> 
+            
+                <% if(data.ama == 1){ %>
+                    <% if(userinfo  && userinfo.ama==0){ %> 
+                    <div class="single-event">
+                        <div class="event-details">
+                            <p>AMA</p>
+                            <p>October 30th, 2021</p>
+                        </div>
+                        <a href=""><button class="know-more-butt">
+                                Know More
+                        </button> </a>
+                    </div>
+                    <% }} %> 
+                    <% if(data.fe == 1){ %> 
+                        <% if(userinfo  && userinfo.fe==0){ %>
+                        <div class="single-event">
+                            <div class="event-details">
+                                <p>Fun Events </p>
+                                <p>October 30th, 2021</p>
+                            </div>
+                            <a href=""><button class="know-more-butt">
+                                    Know More
+                            </button> </a>
+                        </div>
+                        <% }} %> 
+                        <% if(data.encode == 1){ %> 
+                            <% if(userinfo  && userinfo.encode==0){ %>
+                            <div class="single-event">
+                                <div class="event-details">
+                                    <p>Encode </p>
+                                    <p>Code to innovate</p>
+                                </div>
+                                <a href="/events/encode"><button class="know-more-butt">
+                                        Know More
+                                </button> </a>
+                            </div>
+
+                            <% }} %> 
+                            <% if(data.cosmic == 1){ %> 
+                                <% if(userinfo  && userinfo.cosmic==0){ %>
+                                <div class="single-event">
+                                    <div class="event-details">
+                                        <p>Cosmic Clash </p>
+                                        <p> The eSports Tournament</p>
+                                    </div>
+                                    <a href="https://noemie.live/" target="_blank"><button class="know-more-butt">
+                                            Know More
+                                    </button> </a>
+                                </div>
+                                <% }} %> 
+                                <% if(data.sparkle == 1){ %> 
+                                    <% if(userinfo  && userinfo.sparkle==0){ %>
+                                    <div class="single-event">
+                                        <div class="event-details">
+                                            <p>Sparkle </p>
+                                            <p>October 30th, 2021</p>
+                                        </div>
+                                        <a href=""><button class="know-more-butt">
+                                                Know More
+                                        </button> </a>
+                                    </div>
+                                    <% }} %> 
+                                    <% if(data.workshop1 == 1){ %> 
+                                        <% if(userinfo  && userinfo.workshop1==0){ %>
+                                        <div class="single-event">
+                                            <div class="event-details">
+                                                <p>Creating & Funding Start-Up </p>
+                                                <p>Workshop</p>
+                                            </div>
+                                            <a href="/workshops/startup"><button class="know-more-butt">
+                                                    Know More
+                                            </button> </a>
+                                        </div>
+                                        <% }} %> 
+                                        <% if(data.workshop2 == 1){ %> 
+                                            <% if(userinfo  && userinfo.workshop2==0){ %>
+                                            <div class="single-event">
+                                                <div class="event-details">
+                                                    <p>Stock Market </p>
+                                                    <p>October 30th, 2021</p>
+                                                </div>
+                                                <a href="/workshops/stock"><button class="know-more-butt">
+                                                        Know More
+                                                </button> </a>
+                                            </div>
+                                            <% }} %> 
+                                            <% if(data.workshop3 == 1){ %> 
+                                                <% if(userinfo  && userinfo.workshop3==0){ %>
+                                                <div class="single-event">
+                                                    <div class="event-details">
+                                                        <p>Digital Entrepreneurship & Video Marketing</p>
+                                                        <p>October 30th, 2021</p>
+                                                    </div>
+                                                    <a href=""><button class="know-more-butt">
+                                                            Know More
+                                                    </button> </a>
+                                                </div>
+                                                <% }} %> 
+                                                <% if(data.workshop4 == 1){ %> 
+                                                    <% if(userinfo  && userinfo.workshop4==0){ %>
+                                                    <div class="single-event">
+                                                        <div class="event-details">
+                                                            <p>Workshop4</p>
+                                                            <p>October 30th, 2021</p>
+                                                        </div>
+                                                        <a href=""><button class="know-more-butt">
+                                                                Know More
+                                                        </button> </a>
+                                                    </div>
+                                                    <% }} %> 
+        </div>
+
+        <div class="various-events" id="added-events">
+            
+           <% if(userinfo.pmx == 1){ %> 
+           <div class="single-event">
+            <div class="event-details">
+                <p>PMx </p>
+                <p>Product Management Expedition</p>
+            </div>
+            
+            </div>
+            <% } %> 
+            <% if(userinfo.sparkle == 1){ %> 
+                <div class="single-event">
+                 <div class="event-details">
+                     <p>Sparkle </p>
+                     <p>It's never too early to start.</p>
+                 </div>
+                 
+                 </div>
+                 <% } %> 
+            <% if(userinfo.disrupt == 1) {%> 
+            <div class="single-event">
+             <div class="event-details">
+                 <p>disrupt </p>
+                 <p>The ultimate pitching battle is back</p>
+             </div>
+             
+            </div>
+             <% } %> 
+             <% if(userinfo.coding_collab == 1) {%> 
+             <div class="single-event">
+              <div class="event-details">
+                  <p>coding_collab </p>
+                  <p>October 30th, 2021</p>
+              </div>
+              
+            </div>
+              <% } %> 
+              <% if(userinfo.strategy_storm == 1) { %> 
+              <div class="single-event">
+               <div class="event-details">
+                   <p>strategy_storm </p>
+                   <p>October 30th, 2021</p>
+               </div>
+               
+            </div>
+               <% } %> 
+               <% if(userinfo.gaming == 1) {%> 
+               <div class="single-event">
+                <div class="event-details">
+                    <p>gaming </p>
+                    <p>October 30th, 2021</p>
+                </div>
+                
+            </div>
+                <% } %> 
+                <% if(userinfo.dframe == 1) { %> 
+                    <div class="single-event">
+                     <div class="event-details">
+                         <p>Dframe </p>
+                         <p>October 30th, 2021</p>
+                     </div>
+                     
+                  </div>
+                     <% } %> 
+                     <% if(userinfo.encode == 1) { %> 
+                        <div class="single-event">
+                         <div class="event-details">
+                             <p>Encode</p>
+                             <p>Code to innovate</p>
+                         </div>
+                         
+                      </div>
+                         <% } %> 
+                         <% if(userinfo.workshop1 == 1) { %> 
+                            <div class="single-event">
+                             <div class="event-details">
+                                 <p>Creating & Funding Start-Up</p>
+                                 <p>Workshop</p>
+                             </div>
+                             
+                          </div>
+                             <% } %> 
+
+                             <% if(userinfo.workshop2 == 1) { %> 
+                                <div class="single-event">
+                                 <div class="event-details">
+                                     <p>Stock Market</p>
+                                     <p>Workshop</p>
+                                 </div>
+                                 
+                              </div>
+                                 <% } %> 
+                         
+        </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer -->
+    <%- include("./partials/footer.ejs") %>
+
+
+    <!-- message on inactive tab -->
+    <%- include("./partials/inactive-tab-message.ejs") %>
+
+
+    
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="../js/dashboard.js"></script>
+    <script src="../navbar.js"></script>
+    <script src="../js/hamberger.js"></script>
+
+    <!-- three.js -->
+    <script src="../js/three.js"></script>
+
+    <script type="module" src="../js/top_sphere.js"></script>
+</body>
+
+</html>

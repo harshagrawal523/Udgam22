@@ -1,0 +1,1625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDGAM | Teams</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./font/stylesheet.css">
+    <link rel="icon" href="./static files/UDGAM logo (title).png" type="image/icon type">
+    <link rel="stylesheet" href="../font/stylesheet.css">
+    <link rel="icon" href="../static files/UDGAM logo (title).png" type="image/icon type">
+    <link rel="stylesheet" href="../carousel/style2.css">
+    <link rel="stylesheet" href="../css/ourteams.css">
+    <link rel="stylesheet" href="../css/contact-us.css">
+
+
+    <!-- link for font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../css/hamberger.css">
+</head>
+<style>
+    .speaker-icon{
+        height: 1.5em !important;
+        width: 1.45em !important;
+    }
+    .speaker-icon i {
+        font-size: 25px;
+        font-weight: 700;
+        color: #00B0E0;
+        top: -.01em;
+    }
+    .speaker {
+        width: 29% !important;
+        /* border-left: 8px solid #00B0E0; */
+        /* transition: all 2s ease-in-out !important; */
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .speaker:hover .speaker-icon {
+        background-color: #00B0E0 !important;
+    }
+
+
+    .speaker:hover .speaker-icon i {
+        color: white !important;
+    }
+
+
+    .speaker .speaker-icon {
+        border: 2px solid #00B0E0 !important;
+        background-color: #ffffff !important;
+    }
+
+    .speaker-content .speaker-name::first-letter {
+        color: #00B0E0 !important;
+        font-size: 18px !important;
+    }
+
+    .speaker-content .speaker-name::first-letter {
+        color: #00B0E0 !important;
+        font-size: 27px !important;
+    }
+
+    .modalspeakername {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 600;
+    }
+    .modalspeakerpostion{
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 600;
+    }
+    .modalspeakerdetails div{
+        font-size: 12px !important;
+        line-height: 15px;
+
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        .speaker-icon i {
+            font-size: 8px;
+            top: 0.1em !important;
+            left: 0.2em;
+        }    
+        .speaker .speaker-icon{
+            height: 0.95em !important;
+            width: 0.9em !important;
+            border: 1px solid #00B0E0 !important;
+        }
+        .heading-main{
+            margin-top: 50px;
+        }
+
+    }
+
+
+
+    #head-row{
+        margin-top: 40px;
+    }
+
+    .speakers-row-2{
+        display: block !important;
+        height: auto !important;
+    }
+    
+
+
+</style>
+
+<body>
+    <!-- navbar -->
+    <%- include("./partials/nav.ejs") %>
+
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+        <br> <br>
+
+        <section class="section-padding head-section">
+            <div class="container" id="speakers">
+                <div class="col-lg-12 col-xs-12">
+                    <div class="row justify-content-left">
+                        <div>
+                            <div class="heading heading-main">
+                                HEADS
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="headingsub">
+                    A Successful event cannot be pulled out with out a perfect team and A perfect team is incomplete without heads. We as heads supervise, manage and motivate the team members throughout the event.                </div>
+            </div>
+
+            
+
+            <div id="head-row" class="container speakers-row-1">
+                <div class="speaker-info">
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter1">
+                        <img class="speaker__img img1" src="./static files/contact_us/ankit.png" alt="speaker img">
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter1">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter1" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/ankit-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:asaraf@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/thisissaraf/" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:8384964425" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Ankit Saraf</div>
+                                            <div class="modalspeakerpostion">UDGAM<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Convener </div>
+                                            <p class="modalspeakerdetails" style="color: black;">
+                                            <!--     <div class="blockquote-wrapper text-center">
+                                                    <div class="blockquote">
+                                                        <h1>
+
+                                                            “The only way to do great work is to love what you do.”
+                                                        </h1>
+
+                                                    </div>
+                                                </div> -->
+
+                                                    <blockquote class="text-center">
+                                                    <p>The only way to do great work is to love what you do.</p>
+                                                    
+                                                  </blockquote>
+
+                                                <div style="color: black;">
+                                                    This quote of Steve Jobs more or less defines my journey at E-Cell IITG.
+                                                    Associated with E-Cell IITG for two and a half years, I literally loved
+                                                    each
+                                                    and everything associated with this club - be it work, culture, or
+                                                    people
+                                                    themselves.
+                                                    <br>In my journey from Associate Manager to Convener at UDGAM, I
+                                                    witnessed
+                                                    tremendous growth and enjoyed the process.
+                                                    <br>For me, it is more like a family - A HOME AWAY FROM HOME.
+
+                                                </div>
+                                                <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button class="speaker-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter2">
+                        <img class="speaker__img img2" src="./static files/contact_us/ayush.png" alt="speaker img">
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter2">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter2" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/ayush-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:ayush.aggarwal@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/ayush-aggarwal-a6ba6b192"
+                                                        target="_blank" class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:8769889935" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Ayush Aggarwal</div>
+                                            <div class="modalspeakerpostion">E-Cell IITG<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Overall Coordinator </div>
+                                            <p class="modalspeakerdetails" style="color: black;">
+                                            <!-- <div class="blockquote-wrapper text-center">
+                                                <div class="blockquote">
+                                                    <h1>
+
+                                                        “Life is too short to be working for someone else's dream.”
+                                                    </h1>
+
+                                                </div>
+                                            </div> -->
+
+                                            <blockquote class="text-center">
+                                                <p>Life is too short to be working for someone else's dream.</p>
+                                                
+                                              </blockquote>
+
+                                            <div style="color: black;">Working for UDGAM feels like I am growing each
+                                                and
+                                                every second of my life. For me E-Cell is much more than a club and
+                                                working
+                                                in it not once makes me feel tired in fact increases my enthusiasm and
+                                                self
+                                                confidence to achieve other goals.</div>
+                                            </p>
+                                            <br>
+                                        </div>
+                                    </div>
+
+                                    <button class="speaker-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter3">
+                        <img class="speaker__img img3" src="./static files/contact_us/janvi.png" alt="speaker img">
+
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter3">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter3" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/janvi-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:k.janvi@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/janvikale/" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:8070550101" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Janvi Kale</div>
+                                            <div class="modalspeakerpostion">UDGAM<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Intern Fair Head </div>
+                                            <p class="modalspeakerdetails" style="color: black;">
+                                            <!-- <div class="blockquote-wrapper text-center">
+                                                <div class="blockquote">
+                                                    <h1>
+
+                                                        "We are working together, that’s the secret."
+                                                    </h1>
+
+                                                </div>
+                                            </div> -->
+
+                                            <blockquote class="text-center">
+                                                <p>We are working together, that’s the secret.</p>
+                                                
+                                              </blockquote>
+                                            <div style="color: black;">
+                                                This quote encapsulates the best part about being a part of Udgam. <br>
+                                                I've been with Udgam since my first year, and the experience has taught
+                                                me a
+                                                lot. Udgam gave me everything, from a confident personality to a team
+                                                that
+                                                eventually became a family. And I'm grateful to be a part of this
+                                                family.
+
+                                            </div>
+                                            <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button class="speaker-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="head-row" class="container speakers-row-2">
+                <div class="speaker-info">
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter4">
+                        <img class="speaker__img img4" src="./static files/contact_us/manav.png" alt="speaker img">
+
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter4">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter4" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/manav-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:myadav@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/mana-vya" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:8221960871" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Manav Yadav</div>
+                                            <div class="modalspeakerpostion">UDGAM<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Design Head </div>
+                                                <blockquote class="text-center">
+                                                    <p>Ready to learn, unlearn and relearn</p>
+                                                    
+                                                  </blockquote>
+    
+                                                <div style="color: black;">An incredible community of amazing students and seniors who provided a lot of guidance to me. Udgam is one of the best places to work as a student because it provides you with a chance to interact with amazing people, students, and entrepreneurs. I got exposed to such thought-provoking ideas and content while working at Udgam. Students experience joy when they feel a sense of consistency, inter-dependence, and order within the community. I believe in the motto of "Never Stop learning" so I am always ready to learn, Unlearn and relearn.
+                                                </div>
+                                                <br>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter5">
+                        <img class="speaker__img img5" src="./static files/contact_us/mayank.png" alt="speaker img">
+
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter5">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter5" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/mayank-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:mchandak@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/mayankchandak/" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:9075823140" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Mayank Chandak</div>
+                                            <div class="modalspeakerpostion">UDGAM<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Corporate Operation Head </div>
+                                                <br>
+                                                <blockquote class="text-center">
+                                                    <p>You are known by the
+                                                        company you keep, and I sure can tell that I have the best!</p>
+                                                    
+                                                  </blockquote>
+                                            <p class="modalspeakerdetails" style="color: black;">
+                                                There are so many exciting challenges to work on and so many more
+                                                brilliant initiatives originating. Whether as a part of the audience or
+                                                the team inside, Udgam just never stops surprising.</p>
+                                        </div>
+                                        <br>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter6">
+                        <img class="speaker__img img6" src="./static files/contact_us/prakhar.png" alt="speaker img">
+
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter6">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter6" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/prakhar-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:rprakhar@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/prakharrajpali" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:9423107377" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Prakhar Rajpali</div>
+                                            <div class="modalspeakerpostion">UDGAM<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Marketing Head </div>
+                                            <p class="modalspeakerdetails" style="color: black;">
+                                            <!-- <div class="blockquote-wrapper text-center">
+                                                <div class="blockquote">
+                                                    <h1>
+                                                        "If everyone is moving forward together, then success takes care
+                                                        of
+                                                        itself"
+                                                    </h1>
+
+                                                </div>
+                                            </div> -->
+
+                                            <blockquote class="text-center">
+                                                <p>If everyone is moving forward together, then success takes care
+                                                    of
+                                                    itself</p>
+                                                
+                                              </blockquote>
+
+                                            <div style="color: black;">
+                                                E-Cell and UDGAM have given me a new sense of life. I have been in UDGAM
+                                                since my first year, working in UDGAM has made a great contribution in
+                                                what
+                                                I am today. Working for E-Cell feels like I am learning something new,
+                                                developing each and every skill in me. It also boosted my confidence and
+                                                helped me a lot to achieve things which I have today.
+                                            </div>
+                                            <br>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+            <div id="head-row" class="container speakers-row-3">
+                <div class="speaker-info">
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter7">
+                        <img class="speaker__img img7" src="./static files/contact_us/sai.png" alt="speaker img">
+
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter7">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter7" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/sai-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:s.sai@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/sai007/" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:8917560085" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Sai Sreyas Ray</div>
+                                            <div class="modalspeakerpostion">E-Cell IITG<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Secretary </div>
+                                            <p class="modalspeakerdetails" style="color: black;">
+                                           <!--  <div class="blockquote-wrapper text-center">
+                                                <div class="blockquote">
+                                                    <h1>
+                                                        
+                                                        "With great power comes great responsibility."
+                                                    </h1>
+
+                                                </div>
+                                            </div> -->
+
+                                            <blockquote class="text-center">
+                                                <p>With great power comes great responsibility.</p>
+                                                
+                                              </blockquote>
+
+                                            <div style="color: black;">
+                                                E-Cell, IIT Guwahati has been a very crucial part of my college life. It
+                                                has
+                                                helped both grow the culture of entrepreneurship in IIT G and me as an
+                                                individual. As a fresher, I was first introduced to this gem of a club
+                                                through
+                                                UDGAM. Like the meaning of its name, i.e. "Origin", UDGAM was the origin
+                                                of
+                                                self-development for me in college. Working to conduct one of India's
+                                                largest
+                                                E-Summit will always be a surreal experience.
+                                                <br>"We Are UDGAM"
+
+                                            </div>
+                                            <br>
+                                            </p>
+                                        </div>
+                                        <button class="speaker-icon">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter8">
+                        <img class="speaker__img img8" src="./static files/contact_us/shambhawi.png" alt="speaker img">
+
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter8">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter8" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/shambhawi-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:sbhure@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/shambhawibhure" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:7637830170" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Shambhawi Bhure</div>
+                                            <div class="modalspeakerpostion">UDGAM<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> Growth And Strategy Head </div>
+                                            <p class="modalspeakerdetails" style="color: black;">
+                                            <!-- <div class="blockquote-wrapper text-center">
+                                                <div class="blockquote">
+                                                    <h1>
+
+                                                        "Work hard, be yourself and have fun!"
+                                                    </h1>
+
+                                                </div>
+                                            </div> -->
+                                            
+
+                                            <blockquote class="text-center">
+                                                <p>Work hard, be yourself and have fun!</p>
+                                                
+                                              </blockquote>
+
+                                            <div style="color: black;">I've been a part of E-Cell for 2 and a
+                                                half years
+                                                now, and
+                                                the one thing I learnt is that your dedication towards achieving
+                                                the
+                                                target
+                                                is of
+                                                paramount importance. It's not just group of students working
+                                                together,
+                                                it's
+                                                a
+                                                family, with a great bond!
+                                            </div>
+                                            <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button class="speaker-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="speaker" data-toggle="modal" data-target="#headModalCenter9">
+                        <img class="speaker__img img9" src="./static files/contact_us/shyam.png" alt="speaker img">
+
+                        <button class="speaker-icon" data-toggle="modal" data-target="#headModalCenter9">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade blur" id="headModalCenter9" tabindex="-1" role="dialog"
+                            aria-labelledby="headModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 80vw;">
+                                <div class="container modal-content" style="size:auto !important; border:none;">
+                                    <div class="row">
+                                        <div class="col-md-4"
+                                            style="background-color: #333333; justify-content: space-between;">
+                                            <div class="row">
+                                                <img class="col-md-10 modalspeaker__img"
+                                                    src="./static files/contact_us/shyam-1.png" alt="speaker img">
+                                                <div class="col-md-2 modal-social">
+                                                    <a href="mailto:s.amipara@iitg.ac.in" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="facebook button" src="static files\outlook.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="https://www.linkedin.com/in/s-amipara" target="_blank"
+                                                        class="modalicons">
+                                                        <img class="linkedin button" src="static files\linkedin.svg"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                    <a href="tel:9662836967" target="_blank" class="modalicons">
+                                                        <img class="discord button" src="static files\contact.png"
+                                                            style="width: 32px; height:32px;">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8"
+                                            style="padding-right: 3%; padding-top: 2%; padding-bottom: 1%; padding-left: 3%;">
+                                            <div class="modalspeakername">Shyam Amipara</div>
+                                            <div class="modalspeakerpostion">UDGAM<svg height="10" width="10">
+                                                    <circle cx="5" cy="3" r="0.5" stroke="black" stroke-width="3"
+                                                        fill="black" />
+                                                </svg> PMx Head </div>
+                                            <p class="modalspeakerdetails" style="color: black;">
+                                            <!-- <div class="blockquote-wrapper text-center">
+                                                <div class="blockquote">
+                                                    <h1>
+                                                        "Coming together is a beginning, staying together is
+                                                        progress,
+                                                        and working
+                                                        together is a success."
+
+                                                    </h1>
+
+                                                </div>
+                                            </div> -->
+
+                                            <blockquote class="text-center">
+                                                <p>Coming together is a beginning, staying together is
+                                                    progress,
+                                                    and working
+                                                    together is a success.</p>
+                                                
+                                              </blockquote>
+
+                                            <div style="color: black;">These wise words by Henry Ford aptly
+                                                describe my
+                                                journey at
+                                                E-Cell, IITG. I have witnessed the organization grow and I grew
+                                                myself
+                                                with it. Work
+                                                never felt like work, I made friends here and worked together
+                                                with them
+                                                to create
+                                                entrepreneurial value in our campus. I feel lucky and grateful
+                                                to be a
+                                                part of this
+                                                legacy.</div>
+                                                <br>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <button class="speaker-icon">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main">
+            <div class="mainheading">
+                <div class="heading heading-main">
+                    OUR TEAM
+                </div>
+                <div class="headingsub">
+                    The faces of the hard work that goes into Udgam, A group of undergraduates that strive to spread the essence of entrepreneurship.
+
+                </div>
+            </div>
+
+            <div class="teams creativesdiv" onclick="showcontent('creativesdiv')">
+                CREATIVES
+            </div>
+            <div class="creatives_img">
+                <div class="teamshidden creativesdivhidden row align-items-start"
+                    style="display:none; padding-top: 20px !important;" onclick="showcontent('creativesdiv')">
+                    <div class="team_description col">
+                        <div class="heading" style="margin-bottom: 10px;">CREATIVES</div>
+                        <div>We are group of day-dreamers, imagining ideas and infusing them to make a virtual
+                            experience of Udgam. At creatives, we come together to put our passionate work, and make
+                            visuals that go on to become an identity.</div>
+                    </div>
+                    <div class="mobileheadingteam col" style="display: none;">
+                        <div class="heading" style="margin-bottom: 10px;">CREATIVES</div>
+                    </div>
+                    <div class="team_members col-12 col-sm-12 col-md-6">
+                        <div class="row align-items-start">
+                            <div class="team_members1 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/atharva-tagalpallewar/" target="_blank" class="team-member-name">
+                                        Atharva Tagalpallewar
+                                    </a>
+                                    <div>
+                                        <a href="https://www.linkedin.com/in/ayushi-anand-241842203" target="_blank" class="team-member-name">
+                                            Ayushi Anand
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="" target="_blank" class="team-member-name">
+                                            Bhavya Gudhka
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="" target="_blank" class="team-member-name">
+                                            Chinmay zinjal
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="team_members2 col-6 ">
+
+                                <div>
+                                    <a href="https://www.linkedin.com/in/falguni-pawar-8638741b9" target="_blank" class="team-member-name">
+                                        Falguni Pawar
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Hardik jain
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/keerat-kaur-jassal-372704217" target="_blank" class="team-member-name">
+                                        Keerat Kaur Jassal
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Krunal Prajapati
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/vedaprakashr" target="_blank" class="team-member-name">
+                                        Vedaprakash Rajan
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="teams disruptdiv" onclick="showcontent('disruptdiv')">
+                DISRUPT
+            </div>
+            <div class="disrupt_img">
+                <div class="teamshidden disruptdivhidden row align-items-start"
+                    style="display:none; padding-top: 20px !important;" onclick="showcontent('disruptdiv')">
+                    <div class="team_description col">
+                        <div class="heading" style="margin-bottom: 10px;">DISRUPT</div>
+                        <div>The Disrupt team handles the pitching event, Disrupt which is one of the most important
+                            parts of UDGAM. The team also handles event like ideathon for juniors, AMAs and pre-events.
+
+                        </div>
+                    </div>
+                    <div class="mobileheadingteam col" style="display: none;">
+                        <div class="heading" style="margin-bottom: 10px;">DISRUPT</div>
+                    </div>
+                    <div class="team_members col-12 col-sm-12 col-md-6">
+                        <div class="row align-items-start">
+                            <div class="team_members1 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/dev-desai-653794202" target="_blank" class="team-member-name">
+                                        Dev Desai
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Harsh Agrawal
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Naman Tiwari
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/sai-teja-reddy-446785218" target="_blank" class="team-member-name">
+                                        Mopuru Sai Teja Reddy
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <div class="team_members2 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/dhruv-shah-205303202" target="_blank" class="team-member-name">
+                                        Dhruv Shah
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/jashwanth-chowdary-4b1b241ba/" target="_blank" class="team-member-name">
+                                        Jashwanth Mummalaneni
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/mukul-garg-a81423202" target="_blank" class="team-member-name">
+                                        Mukul Garg
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/sohamparundekar/" target="_blank" class="team-member-name">
+                                        Soham Parundekar
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/vipul-bajaj-268220201" target="_blank" class="team-member-name">
+                                        Vipul Bajaj
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="teams growthdiv" onclick="showcontent('growthdiv')">
+                GROWTH AND STRATEGY
+            </div>
+
+            <div class="growth_img">
+                <div class="teamshidden growthdivhidden row align-items-start"
+                    style="display:none; padding-top: 20px !important;" onclick="showcontent('growthdiv')">
+                    <div class="team_description col">
+                        <div class="heading" style="margin-bottom: 10px;">GROWTH AND STRATEGY</div>
+                        <div>Growth and Strategy Team oversees the Campus Ambassador Program. We reach out to our target
+                            audience, and previous year's participants to share the word about UDGAM. We ideate to share
+                            the events on social media using creative branding techniques. Moreover, we plan side events
+                            to retain and attract more audiences.
+                            UDGAM can grow only when its events, organized by other teams, grow, and we ensure that.
+                        </div>
+                    </div>
+                    <div class="mobileheadingteam col" style="display: none;">
+                        <div class="heading" style="margin-bottom: 10px;">GROWTH AND STRATEGY</div>
+                    </div>
+                    <div class="team_members col-12 col-sm-12 col-md-6">
+                        <div class="row align-items-start">
+                            <div class="team_members1 col-6 ">
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Akshansh Mahendra
+
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/anurag-yadav-jnv/" target="_blank" class="team-member-name">
+                                        Anurag Yadav
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Amit Singh Nagnyal
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Dnyaneshwar Dahake
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Himanshu Mittal
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/lakshya-mittal-ba82b9202" target="_blank" class="team-member-name">
+                                        Lakshya Mittal
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="team_members2 col-6 ">
+
+                                <div>
+                                    <a href="https://www.linkedin.com/in/snandini050" target="_blank" class="team-member-name">
+                                        Nandini Sharma
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Nitya Tiwari
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Pridhvin P
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Rapolu Shiva Prasad
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/shashwat-gupta-b3261b212" target="_blank" class="team-member-name">
+                                        Shashwat Gupta
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Subhransu Sekhar Khuntia
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="teams interndiv" onclick="showcontent('interndiv')">
+                INTERN FAIR
+            </div>
+            <div class="intern_img">
+                <div class="teamshidden interndivhidden row align-items-start"
+                    style="display:none; padding-top: 20px !important;" onclick="showcontent('interndiv')">
+                    <div class="team_description col">
+                        <div class="heading" style="margin-bottom: 10px;">INTERN FAIR</div>
+                        <div>As a Team, we take care that the event runs smoothly and doesn’t face any problems. We
+                            contact startups who are interested to participate and provide them with talents. Meanwhile
+                            also giving students an opportunity to participate.</div>
+                    </div>
+                    <div class="mobileheadingteam col" style="display: none;">
+                        <div class="heading" style="margin-bottom: 10px;">INTERN FAIR</div>
+                    </div>
+                    <div class="team_members col-12 col-sm-12 col-md-6">
+                        <div class="row align-items-start">
+                            <div class="team_members1 col-6 ">
+                                <div>
+                                    <a href="http://linkedin.com/in/aayushsoni895" target="_blank" class="team-member-name">
+                                        Aayush Soni
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Abburi Charishma
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/abhijeet-patnaik-a54711186/" target="_blank" class="team-member-name">
+                                        Abhijeet Patnaik
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/akanksha-gupta-7a1a2820a" target="_blank" class="team-member-name">
+                                        Akanksha Gupta
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/ayushdattajaiswal" target="_blank" class="team-member-name">
+                                        Ayush Datta Jaishwal
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Krunal Prajapati
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_members2 col-6 ">
+
+                                <div>
+                                    <a href="https://www.linkedin.com/in/adwait-deshpande-728169203/" target="_blank" class="team-member-name">
+                                        Adwait Deshpande
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/akshat-nigam-500b6a1b7" target="_blank" class="team-member-name">
+                                        Akshat Nigam
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Poorvi Wankhade
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/charul-shaharey-b57403206/" target="_blank" class="team-member-name">
+                                        Charul Shaharey
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Riya Gupta
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://www.linkedin.com/in/shawsk" target="_blank" class="team-member-name">
+                                        Sonu Kumar Shaw
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="teams lsdiv" onclick="showcontent('lsdiv')">
+                LS AND WORKSHOPS
+            </div>
+            <div class="ls_img">
+                <div class="teamshidden lsdivhidden row align-items-start"
+                    style="display:none; padding-top: 20px !important;" onclick="showcontent('lsdiv')">
+                    <div class="team_description col">
+                        <div class="heading" style="margin-bottom: 10px;">LS AND WORKSHOPS</div>
+                        <div>We as a team conduct workshops, lecture series , panel discussions and NEC bringing
+                            industry experts and successful entrepreneurs to grow the startup culture , inspire and
+                            educate about entrepreneurship.</div>
+                    </div>
+                    <div class="mobileheadingteam col" style="display: none;">
+                        <div class="heading" style="margin-bottom: 10px;">LS AND WORKSHOPS</div>
+                    </div>
+                    <div class="team_members col-12 col-sm-12 col-md-6">
+                        <div class="row align-items-start">
+                            <div class="team_members1 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/arka-datta" target="_blank" class="team-member-name">
+                                        Arka Datta
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Boni Hazarika
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/dhruvesh-bhure-839362201/" target="_blank" class="team-member-name">
+                                        Dhruvesh Bhure
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Harshita Malviya
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/samyak-jain-476ab0202/" target="_blank" class="team-member-name">
+                                        Samyak Jain
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team_members2 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/arpan-khanna-b0241b1bb" target="_blank" class="team-member-name">
+                                        Arpan Khanna
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/chetan-chinchulkar-224584201/" target="_blank" class="team-member-name">
+                                        Chetan Chinchulkar
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/dishank-ojha-02" target="_blank" class="team-member-name">
+                                        Dishank Ojha
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Nidhi Shrivastava
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Shubham Yadav
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/umang1821/" target="_blank" class="team-member-name">
+                                        Umang Jain
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="teams marketingdiv" onclick="showcontent('marketingdiv')">
+                MARKETING
+            </div>
+            <div class="marketing_img">
+                <div class="teamshidden marketingdivhidden row align-items-start"
+                    style="display:none; padding-top: 20px !important;" onclick="showcontent('marketingdiv')">
+                    <div class="team_description col">
+                        <div class="heading" style="margin-bottom: 10px;">MARKETING</div>
+                        <div>Team marketing handles all the sponsorship related stuff along with the finance for the
+                            event. This team works day and night to call the best fit for the sponsors lineup in the
+                            event. All the event needs strong corporate and industry collaborations and this is the team
+                            who holds the back of it. </div>
+                    </div>
+                    <div class="mobileheadingteam col" style="display: none;">
+                        <div class="heading" style="margin-bottom: 10px;">MARKETING</div>
+                    </div>
+                    <div class="team_members col-12 col-sm-12 col-md-6">
+                        <div class="row align-items-start">
+                            <div class="team_members1 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/ankita-singh-484809202" target="_blank" class="team-member-name">
+                                        Ankita Singh
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Archit Avadhane
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Diksha Shree
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/goutham-jyothilal-8a9765202/" target="_blank" class="team-member-name">
+                                        Goutham Jyothilal
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="https://www.linkedin.com/in/harsh-arora-8b0834202" target="_blank" class="team-member-name">
+                                        Harsh Arora
+                                    </a>
+                                </div>
+
+                                <div>
+                                    <a href="https://www.linkedin.com/in/harsh-kamale" target="_blank" class="team-member-name">
+                                        Harsh Kamale
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="team_members2 col-6 ">
+
+
+                                <div>
+                                    <a href="https://www.linkedin.com/in/madhura-mehare-8045b11ba" target="_blank" class="team-member-name">
+                                        Madhura Mehare
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/niharika-singh-3a2961209" target="_blank" class="team-member-name">
+                                        Niharika Singh
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/nilesh-kumar-8447a3202" target="_blank" class="team-member-name">
+                                        Nilesh Kumar
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/rutunjay-rao" target="_blank" class="team-member-name">
+                                        Rutunjay Rao A
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Sidharth Choudhary
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/sudip-manchare-b3b4131ba" target="_blank" class="team-member-name">
+                                        Sudip Sudin Manchare
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="teams pmxdiv" onclick="showcontent('pmxdiv')">
+                PMx
+            </div>
+            <div class="pmx_img">
+                <div class="teamshidden pmxdivhidden row align-items-start"
+                    style="display:none; padding-top: 20px !important;" onclick="showcontent('pmxdiv')">
+                    <div class="team_description col">
+                        <div class="heading" style="margin-bottom: 10px;">PMx</div>
+                        <div>We are a bunch of product enthusiasts, who enjoy participating in and conducting events on
+                            Product Management. In the PMx module of Udgam, we make sure that participants have a smooth
+                            experience throughout the case study competition which spans over a month. The team also
+                            ideates on Growth strategies, handles corporate relations with partner companies, organises
+                            pre-events to PMx and manages the Product Slack Community of E-Cell, IITG.</div>
+                    </div>
+                    <div class="mobileheadingteam col" style="display: none;">
+                        <div class="heading" style="margin-bottom: 10px;">PMx</div>
+                    </div>
+                    <div class="team_members col-12 col-sm-12 col-md-6">
+                        <div class="row align-items-start">
+                            <div class="team_members1 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/ashish-mangha-0089aa212" target="_blank" class="team-member-name">
+                                        Ashish Mangha
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://linkedin.com/in/bhoomikdhaka12" target="_blank" class="team-member-name">
+                                        Bhoomika Dhaka
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        G Yuvan Shankar
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://www.linkedin.com/in/gaurangthakur9780" target="_blank" class="team-member-name">
+                                        Gaurang Thakur
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/karn-pratap-singh-874578202" target="_blank" class="team-member-name">
+                                        Karn Pratap Singh
+                                    </a>
+                                </div>
+
+                            </div>
+                            <div class="team_members2 col-6 ">
+                                <!-- <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Ketan Kansal
+                                    </a>
+                                </div> -->
+                                <div>
+                                    <a href="https://www.linkedin.com/in/mukesh-kumar-choudhary-293336200" target="_blank" class="team-member-name">
+                                        Mukesh Kumar Choudhary
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/sahil-nizam-84bb52202" target="_blank" class="team-member-name">
+                                        Sahil Nizam
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/sudhir-s-8a4a99200" target="_blank" class="team-member-name">
+                                        Sudhir S
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://linkedin.com/in/vanshita-sharma-a68a10202" target="_blank" class="team-member-name">
+                                        Vanshita Sharma
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="teams initiativesdiv" onclick="showcontent('initiativesdiv')">
+                TEAM INITIATIVES
+            </div>
+            <div class="initiatives_img">
+                <div class="teamshidden initiativesdivhidden row align-items-start"
+                    style="display:none; padding-top: 20px !important;" onclick="showcontent('initiativesdiv')">
+                    <div class="team_description col">
+                        <div class="heading" style="margin-bottom: 10px;">TEAM INITIATIVES</div>
+                        <div>Taking an initiative means going the extra mile or going above and beyond the typical
+                            responsibilities to make things more interesting and fun. Fulfilling this TEAM INITIATIVE
+                            organizes various side events throughout UDGAM, which brings out the entrepreneur in you. We
+                            take the responsibility to make this summit not only insightful but also a fun one.</div>
+                    </div>
+                    <div class="mobileheadingteam col" style="display: none;">
+                        <div class="heading" style="margin-bottom: 10px;">TEAM INITIATIVES</div>
+                    </div>
+                    <div class="team_members col-12 col-sm-12 col-md-6">
+                        <div class="row align-items-start">
+                            <div class="team_members1 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/deepanjali-sinha-8b56b5218" target="_blank" class="team-member-name">
+                                        Deepanjali Sinha
+                                    </a>
+                                </div>
+
+                                        <div>
+                                            <a href="https://www.linkedin.com/in/krish-rajpal-b60310209?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwpRmDKwBRQaebPRYNWyOMA%3D%3D" target="_blank" class="team-member-name">
+                                                Krish Rajpal
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.linkedin.com/in/krishna-khakholia-84153a202" target="_blank" class="team-member-name">
+                                                Krishna Khakholia
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="https://www.linkedin.com/in/mohit-pal-35a763205/" target="_blank" class="team-member-name">
+                                                Mohit Pal
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="" target="_blank" class="team-member-name">
+                                                Pranav Nair
+                                            </a>
+                                        </div>
+
+                            </div>
+                            <div class="team_members2 col-6 ">
+                                <div>
+                                    <a href="https://www.linkedin.com/in/raghavmittal123" target="_blank" class="team-member-name">
+                                        Raghav Mittal
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/riddhi-agrawal-593913207" target="_blank" class="team-member-name">
+                                        Riddhi Agrawal
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="http://www.linkedin.com/in/sahil2609" target="_blank" class="team-member-name">
+                                        Sahil Kumar Gupta
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="" target="_blank" class="team-member-name">
+                                        Shyam D
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/soumadip-das-6031631b9" target="_blank" class="team-member-name">
+                                        Soumadip Das
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/vikash1912" target="_blank" class="team-member-name">
+                                        Vikash Rahul
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+                <div class="bottom">
+                    <div style="display:flex; justify-content: space-between;">
+                        <div class="heading">
+                            LOVE OUR WORK ?
+                        </div>
+                        <div onclick="location.href='/contactus'"
+                            style="display:flex; align-items: end; font-size: 3vh; cursor: pointer;">
+                            <div>
+                                LET US KNOW
+                            </div>
+                            <a style="margin-left:1vw;">
+                                <img src="./static files/chevron-right (2).svg"
+                                    style="height:1.8em; padding: 0%; border: 0.1em solid white">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="headingsub">
+                        We’d love to hear from you, be it queries, questions or suggestions!
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- footer -->
+
+        <%- include("./partials/footer.ejs") %>
+
+
+    <!-- message on inactive tab -->
+    <%- include("./partials/inactive-tab-message.ejs") %>
+
+            <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+                crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"></script>
+
+
+            <script>
+                $(window).scroll(function () {
+                    $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+                });
+            </script>
+            <script>
+                function showcontent(teamname) {
+                    var data = document.getElementsByClassName(`${teamname}`);
+                    var data2 = document.getElementsByClassName(`${teamname}hidden`);
+                    // console.log(data[0].style);
+
+                    if (data[0].style.display == "") {
+                        data[0].style.display = "none";
+                        data2[0].style.display = "";
+                    }
+                    else {
+                        data2[0].style.display = "none";
+                        data[0].style.display = "";
+                    }
+                }
+            </script>
+            <script src="../navbar.js"></script>
+            <script src="../js/hamberger.js"></script>
+
+            <!-- three.js -->
+            <script src="../js/three.js"></script>
+
+            <script type="module" src="../js/top_sphere.js"></script>
+</body>
+
+</html>

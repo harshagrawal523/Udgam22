@@ -1,0 +1,230 @@
+
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lecture Series | Register</title>
+    
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    
+    
+        <link rel="stylesheet" href="../css/events.css">
+        <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../font/stylesheet.css">
+    
+         
+        
+        <!-- <link rel="icon" href=""> -->
+        <link rel="icon" href="../static files/UDGAM logo (title).png" type="image/icon type">
+        <!-- link for font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="../carousel/style.css">
+        <link rel="stylesheet" href="../css/hamberger.css">
+    </head>
+    
+    <body>
+         <!-- navbar -->
+         <%- include("./partials/nav.ejs") %>
+        
+    
+        <div class="stars"></div>
+        <div class="twinkling"></div>
+        <div class="clouds"></div>
+        <div class="main">
+            <br>
+            <br>
+            <br>
+    
+            <section class="section-padding" id="event">
+                <div class="title">
+                    LECTURE SERIES
+                </div>
+    
+                
+                <form class="reg-form-div" id="reg-form-div"  style="margin-top: 120px; margin-bottom: 250px;">
+                    <div class="container content">
+                        <div class="row justify-content-between form-img-div" >
+                            <div class="col-12 col-sm-12 col-md-6 order-2 order-lg-1 order-md-1 RegistrationDetails" style="margin-top: 0%;">
+                                <label for="leadername" class=" title-b ">LEADER NAME</label>
+                                <input type="text" id="leadername" name="leadername"  >
+                                <br>
+                                <label for="leaderemailID" class=" title-b ">EMAIL ID</label>
+                                <input type="email" oninput="handleInput(event)" id="leaderemailID" name="leaderemailID"  >
+                                <div class="icons email-check-icons align-self-center footer-mail-icon">
+                                    <i class='check-icon bx bxs-check-circle check' ></i>
+                                    <i class='check-icon bx bxs-x-circle x' ></i>
+                                  </div>
+                                  <br>
+                                <label for="leaderphone" class=" title-b ">PHONE</label>
+                                <input type="text" id="leaderphone" name="leaderphone" >
+                                <br>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 order-1 order-lg-2 order-md-2 align-self-center event-img"  style="border: solid 1px #C4C4C4; background-color: white;">
+                                <!-- <img src="../public/static files/img_avatar.png" class="img-fluid" alt="" width="300" height="300"> -->
+                            </div>
+                        </div>
+                    </div>
+                    <br><br>
+                    
+                    <br>
+                    <div class="row">
+
+                        <div class="form-group col-sm-6" >
+                            <label for="exampleFormControlSelect1" class=" title-b " style="text-transform: uppercase;">From where did you get to know about PMx</label>
+                            <select class="form-control" id="exampleFormControlSelect1" style="color: white !important;background: transparent !important;">
+
+                                <option value="1">Instagram</option>
+                                <option value="2">LinkedIn</option>
+                                <option value="3">Facebook</option>
+                                <option value="4">Twitter</option>
+                                <option value="5">Through Campus Ambassador</option>
+                                <option value="6">Mail</option>
+                                <option value="7">Friends</option>
+                                <option value="8">Slack Community</option>
+                                <option value="9">Dare2Compete</option>
+                                <option value="10">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group CA-option col-12 col-sm-12 col-md-5 col-lg-5" id="CAReferral" style="text-align: center;display: none">
+                            <div class="form-row">
+
+                                <label for="careffid" class="col-12 col-sm-12 col-md-6 col-lg-6 title-b " >CA REFERRAL ID
+                                </label>
+                                <input type="text" name="careffid" class="form-control col-12 col-sm-12 col-md-4 col-lg-4" id="careffid" style="background: transparent !important; color:white !important;" required>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="content">
+       
+                                   
+                                    
+                                    <div class="form-row " style="padding-top: 60px;">
+                                        <div class="form-group">
+                                            <label for="" style="padding-left: 5px;" class=" title-b ">
+                                                Do you want to confirm your Registration?
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-between">
+                                        <div class="form-group col-md-6" >
+                                            <div>
+                                                <button type="button" class="btn btn-primary" style="width: 100%;">REGISTER & PAY</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <a href="/events/lecture-series">
+                                                <button type="button" class="btn btn-light back-btn" style="color: white;width:100%">GO BACK</button>
+                                            </a>
+                                        </div>
+                                    </div>
+                         
+                    </div>
+                </form>
+    
+            </section>
+            
+            <!-- Events Section -->
+            <%- include("./partials/all-events.ejs") %>
+         
+               
+        </div>
+         
+         <!-- footer -->
+         <%- include("./partials/footer.ejs") %>
+    
+    <!-- message on inactive tab -->
+    <%- include("./partials/inactive-tab-message.ejs") %>
+
+    
+    
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+            crossorigin="anonymous"></script>
+    
+        
+        <script>
+            $(window).scroll(function () {
+                $('nav').toggleClass('scrolled', $(this).scrollTop() > 30);
+            });
+        </script>
+         <script>
+            $("select").change(function () {
+                if ($(this).val() == 5) {
+                    console.log("you selected CA");
+                    showmore();
+                } else {
+
+                    showless();
+                }
+                console.log("you changed the value");
+                
+            });
+        </script>
+        
+    
+       
+        <script>
+            function moreEvents() {
+                let show = document.getElementsByClassName('more-events');
+                let toggle = document.getElementById('show-more-events');
+                let str = toggle.innerHTML;
+                // console.log(str.includes('up'));
+                if (str.includes('up')) {
+                    // console.log('yes');
+    
+                }
+    
+                console.log(show);
+    
+                Array.from(show).forEach(element => {
+                    console.log(element);
+                    if (str.includes('down')) {
+                        // console.log('yes');
+                        element.style.display = 'flex';
+                        toggle.innerHTML = `<a href="#events-collapse" style="font-size:16px; align-items:center;">show less <i class="fas fa-chevron-up" style="color:#00b0e0;"></i></a>`;
+                    } else {
+                        let target = document.getElementById('events-collapse');
+                        console.log(target);
+                        element.style.display = 'none';
+                        toggle.innerHTML = `show more <i class="fas fa-chevron-down" style="color:#00b0e0;"></i>`;
+                    }
+                });
+            }
+        </script>
+        <script>
+            function showmore() {
+                document.getElementById("CAReferral").style.display = 'block';
+    
+            }
+            function showless() {
+                document.getElementById("CAReferral").style.display = 'none';
+            }
+        </script>
+        <script src="../js/hamberger.js"></script>
+
+        <!-- three.js -->
+        <script src="../js/three.js"></script>
+
+        <script type="module" src="../js/top_sphere.js"></script>
+    </body>
+    
+    </html>
+    
+    
+   

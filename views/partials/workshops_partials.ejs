@@ -1,0 +1,243 @@
+
+    <link rel="stylesheet" href="../css/workshops.css">
+<style>
+
+    .more-workshops{
+        margin-top: 40px;
+    }
+</style>
+
+        <div >
+
+            <div class="container more-events-head" >
+               
+                <div class="title" style="color:#00b0e0;">
+                    WORKSHOPS
+                </div>
+                <br>
+
+                <div class="row justify-content-between">
+
+                    <div class="col-12 col-sm-12 col-lg-6 col-xs-12 ev-col ev-col-right">
+
+                        <div class="more-event-ind-div more-event-ind-div-right">
+                            <div class="row justify-content-between align-items-center" style="padding-right: 15px;">
+                                <h3 class="col-8 col-sm-8 col-md-10 col-lg-10 ">
+                                Creating & Funding Start-Up
+                                </h3>
+                                
+
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 align-self-center">
+                                    
+                                    <img src="../static files/event-icon-money.png" height="26" width="26" alt="money" data-toggle="tooltip" data-placement="top" title="Paid">
+
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 align-self-center" >
+                                    <img src="../static files/event-icon-team.png" height="26" width="26" alt="team"  data-toggle="tooltip" data-placement="top" title="Pass">
+
+
+                                </div>
+                            </div>
+
+                            <p>
+                                The workshop intends to assist you in developing successful businesses, as well as provide guidance on promotion, crisis management, and how to obtain funding for your business.
+                            <br><br>
+                            </p>
+                            <div class="row justify-content-between">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 ">
+                                    <% if(data.workshop1==1){ %> 
+                                        <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                            
+                                                <% if(!userinfo ){ %> 
+                                                    <a class="event-pass-link" target="_blank" href="/workshop-startup/register" style="color: #00b0e0;">
+                                                        Register
+                                                        </a>
+                                                <% }else if(userinfo && userinfo.workshop1 == 1){ %> 
+                                                            <span class="event-pass-link" target="_blank" style="color: #00b0e0;">
+                                                
+                                                                Registered
+                                                            </span>
+
+                                                <% }else if(userinfo && userinfo.workshop1 !=1 ){ %> 
+                                                    <a class="event-pass-link" href="/workshop-startup/register" style="color: #00b0e0;">
+                                                        Register
+                                                        </a>
+                                                    <% } %>
+                                                            
+                                                        
+
+                                    
+                                        </button>
+                                     <% } %> 
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                    <% if(data.workshop1==1){ %> 
+                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                           class="event-know-more-link" href="/workshops/startup">Know More</a></button>
+                                    <% }else{ %>
+                                        <button type="button" class="btn btn-outline-secondary" disabled><a style="color: white;"
+                                            class="event-know-more-link" href="#" style="text-decoration: non">Releasing Soon</a></button>
+                                        <% } %> 
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-lg-6 col-xs-12 ev-col ev-col-left">
+
+                        <div class="more-event-ind-div more-event-ind-div-left">
+                            <div class="row justify-content-between align-items-center" style="padding-right: 15px;">
+                                <h3 class="col-8 col-sm-8 col-md-10 col-lg-10 ">
+                                Stock Market
+                                </h3>
+                                <!-- If icons are links-->
+                                <!--
+                                    <a href="" class="col- col-sm- col-md-1 col-lg-1 ">
+                                                                                <img src="../static files/event-icon-money.png" alt="money" data-toggle="tooltip" data-placement="top" title="Paid">
+
+                                    </a>
+                                -->
+
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 align-self-center">
+                                    
+                                    <img src="../static files/event-icon-money.png" height="26" width="26" alt="money" data-toggle="tooltip" data-placement="top" title="Paid">
+
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 align-self-center" >
+                                    <img src="../static files/event-icon-team.png" height="26" width="26" alt="team"  data-toggle="tooltip" data-placement="top" title="Pass">
+
+
+                                </div>
+                            </div>
+
+                            <p>
+                                Did you ever hear people talking about finance? Did you dream of investing in the market but stopped because of a saying, “market risky hota hai”? Then do remember the dialogue of SCAM 1992, “Risk hai toh Ishq hai”. Never mind, we are here to provide you with the platform to start your finance journey.
+                            </p>
+                            <div class="row justify-content-between">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 ">
+                                    <% if(data.workshop2==1){ %> 
+                                    <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                        
+                                            
+                                                    <a class="event-pass-link" href="/workshop-stock/register" style="color: #00b0e0;">
+                                                
+                                                        Register
+                                                        </a>
+                                            
+                                                       
+                                                        
+                                                   
+                                
+                                </button>
+                                <% } %> 
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                    <% if(data.workshop2==1){ %> 
+                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                           class="event-know-more-link" href="/workshops/stock">Know More</a></button>
+                                    <% }else{ %>
+                                        <button type="button" class="btn btn-outline-secondary" disabled><a style="color: white;"
+                                            class="event-know-more-link" style="text-decoration: none !important">Releasing Soon</a></button>
+                                    <% } %>  
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="row justify-content-between more-workshops">
+
+                    <div class="col-12 col-sm-12 col-lg-6 col-xs-12 ev-col ev-col-right">
+
+                        <div class="more-event-ind-div more-event-ind-div-right">
+                            <div class="row justify-content-between align-items-center" style="padding-right: 15px;">
+                                <h3 class="col-8 col-sm-8 col-md-10 col-lg-10 ">
+                                    Digital Entrepreneurship & Video Marketing 
+                                </h3>
+                                <!-- If icons are links-->
+                                <!--
+                                    <a href="" class="col- col-sm- col-md-1 col-lg-1 ">
+                                                                                <img src="../static files/event-icon-money.png" alt="money" data-toggle="tooltip" data-placement="top" title="Paid">
+
+                                    </a>
+                                -->
+
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 align-self-center">
+                                    
+                                    <img src="../static files/event-icon-money.png" height="26" width="26" alt="money" data-toggle="tooltip" data-placement="top" title="Paid">
+
+                                </div>
+                                <div class="col-2 col-sm-2 col-md-1 col-lg-1 align-self-center" >
+                                    <img src="../static files/event-icon-team.png" height="26" width="26" alt="team"  data-toggle="tooltip" data-placement="top" title="Pass">
+
+
+                                </div>
+                            </div>
+
+                            <p>
+                                Ever thought about how to create your personal brand on social media platforms? What skills does one need to grow their brand digitally?
+
+Udgam 2022 brings to you Digital Entrepreneurship & Video Marketing workshop to answer these questions and many more
+                            </p>
+                            <div class="row justify-content-between">
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 ">
+                                    <% if(data.workshop3==1){ %> 
+                                        <button type="button" class="btn btn-outline-secondary" style="color: #00b0e0;">
+                                            
+                                                <% if(!userinfo ){ %> 
+                                                    <a class="event-pass-link" href="//register" style="color: #00b0e0;">
+                                                        Register
+                                                        </a>
+                                                <% }else if(userinfo && userinfo.workshop3 == 1){ %> 
+                                                            <span class="event-pass-link" style="color: #00b0e0;">
+                                                
+                                                                Registered
+                                                            </span>
+
+                                                <% }else if(userinfo && userinfo.workshop3 !=1 ){ %> 
+                                                    <a class="event-pass-link" href="//register" style="color: #00b0e0;">
+                                                        Register
+                                                        </a>
+                                                    <% } %>
+                                                            
+                                                        
+
+                                    
+                                        </button>
+                                     <% } %> 
+                                </div>
+                                <div class="col-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                    <% if(data.workshop3==1){ %> 
+                                    <button type="button" class="btn btn-outline-secondary"><a style="color: white;"
+                                           class="event-know-more-link" href="/workshops/">Know More</a></button>
+                                    <% }else{ %>
+                                        <button type="button" class="btn btn-outline-secondary" disabled><a style="color: white;"
+                                            class="event-know-more-link" style="text-decoration: none !important">Releasing Soon</a></button>
+                                        <% } %> 
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    
+                </div>
+
+               
+            </div>
+            
+           <!--  <div class="more-events-heading container">
+                <br><br>
+                <button id="show-more-events" style="color:#00b0e0;" onclick="moreWorkshops()">
+                    show more <i class="fas fa-chevron-down" style="color:#00b0e0;"></i>
+                </button>
+
+            </div> -->
+        </div>
+    <br><br>

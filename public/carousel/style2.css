@@ -1,0 +1,108 @@
+
+.event-page{
+    width: 100%;
+    
+}
+
+.pages 
+{position: absolute;
+    width: 85%;
+    right: 0rem;
+
+}
+
+.page-header 
+{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    
+}
+
+.page__image 
+{
+    margin: auto;
+    height: 50px;
+    width: auto;
+
+    transition: all .5s;
+    margin-bottom: 20px;
+}
+
+.page__image.disabled 
+{
+    left: 1em;
+    display: none;
+}
+
+.page-info 
+{
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    transition: all .5s;
+    
+}
+
+.page-info.disabled 
+{
+    left: 10em;  
+    display: none;
+}
+
+.page-info.opening, .page__image.opening
+{
+    display: block !important;
+}
+
+.page-info.closing, .page__image.closing
+{
+    display: none !important;
+}
+
+.page_content{
+    text-align: center;
+}
+
+.controls 
+{   
+
+    width: 10%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 25px !important;
+    
+}
+
+.carousel-image{
+    height: 30px;
+    width: auto;
+    margin: 10px 0;
+        
+    opacity: 0.9;
+
+    display: block;
+}
+
+.carousel-image.disabled {
+    border: none !important;
+
+    opacity: 0.5;
+
+}   
+.carousel-img-row{
+    padding-left : 10px !important;
+    padding-right : 11px !important;
+    /* -webkit-transition: .5s linear !important;
+    -moz-transition: .5s linear !important;
+    -o-transition: .5s linear !important;
+    transition: .5s linear !important; */
+}
+.carousel-img-row.disabled{
+    border: none !important;
+}
+
+.event-links.disabled {
+    display: none;
+}

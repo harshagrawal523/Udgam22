@@ -1,0 +1,194 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    opacity: 0.5; 
+    color: white;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    opacity: 0.5; 
+    color: white;
+}
+
+
+.main{
+    margin: 10vh 10vw !important;
+}
+
+  
+.mainheading{
+    margin-bottom: 8vh;
+}
+
+.heading{
+    font-size : 3.5vw;
+    color : #00B0E0;
+    font-weight: 800;
+}
+
+
+
+.ProfilePic{
+    /* margin: auto; */
+    /* display: inlineblock;
+    margin-left: auto;
+    margin-right: auto; */
+    /* width: 50%; */
+    margin : 0px;
+    padding-left: 0% !important;
+
+}
+
+
+@media (max-width : 768px) {
+    .ProfilePic{
+        /* margin: auto; */
+        display: inlineblock;
+        margin-left: auto;
+        margin-right: auto;
+        /* width: 50%; */
+        margin : 0;
+    }
+
+    #ProfilePic{
+        width: 30vw; 
+        height: 30vw;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .button-register,label{
+        font-size: 18px !important;
+    }
+    input{
+        
+        font-size: 18px !important;
+    }
+
+
+}
+  
+#ProfilePic{
+    width: 29vw; 
+    height: 29vw;
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+}
+
+
+
+.RegistrationDetails{
+    /* margin-left: 10vw; */
+    
+    width: 100%;
+    padding-top: 0%;
+    margin-top: 0%;
+  }
+  
+  label{
+    color: #00B0E0;
+    margin-bottom: 1vh;
+      
+    font-family: Texta;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 34px;
+    /* identical to box height */
+  
+  
+    /* #00B0E0 */
+  
+    color: #00B0E0;
+  
+  
+  }
+  input{
+    background: transparent !important;
+    color : white !important;
+    border: 1px solid white;
+    margin-bottom: 1vh !important;
+    padding-right: 1vw;
+    padding-left: 1vw;
+  
+    font-family: Texta;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    /* identical to box height */
+  
+  
+    /* #00B0E0 */
+  
+    color: #00B0E0;
+  }
+
+  
+.button-register{
+
+    font-family: Texta;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    /* identical to box height, or 56% */
+  
+    text-align: center;
+  
+    /* #F4FDFF */
+  
+    color: #F4FDFF;
+  
+  
+  }
+  
+
+  #passwordicon{
+    margin-left : -4%; 
+    margin-top: 2%; 
+    position:absolute;
+  }
+  
+  
+  @media(max-width: 1024px){
+    #passwordicon{
+        margin-left:-3%; 
+        margin-top:1%; 
+    }
+  }
+  
+  @media(max-width: 768px){
+    #passwordicon{
+        margin-left:-4.5%; 
+        margin-top:1.5%; 
+    }
+  }
+  @media screen and (max-width: 500px) {
+    #passwordicon{
+        margin-left:-6.5%; 
+        margin-top:3.5%; 
+    }
+  }
+      
+  
+  @media(max-width: 376px){
+    #passwordicon{
+        margin-left:-7%; 
+        margin-top: 3.5%; 
+    }
+  }
+input[type=submit] ,.row button{
+    margin: 10px 0;
+    
+  }
+  
+  input{
+    padding : 5px 0;
+  }
